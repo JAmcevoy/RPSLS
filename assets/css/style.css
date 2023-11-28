@@ -152,6 +152,11 @@ button {
 }
 
 @media screen and (min-width: 900px) {
+    
+    #game-section {
+        padding-bottom: 10px;
+    }
+    
     #game-info {
         padding-left: 50px;
         padding-right: 50px;

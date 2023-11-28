@@ -1,3 +1,38 @@
+function getPlayerChoice(){
+    
+}
+
+
+/**
+ * Picks a number by between 1-5 then pulls a value from the array matching that number
+ */
+function getComputerChoice() {
+    let comChoice = Math.floor(Math.random() * 4);
+    if (comChoice == 0) {
+        return 'rock';
+    } else if (comChoice == 1) {
+        return 'paper';
+    } else if (comChoice == 2) {
+        return 'scissors';
+    } else if (comChoice == 3) {
+        return 'lizzard';
+    } else if (comChoice == 4) {
+        return 'spock'
+    }
+}
+
+
+
+let rock = document.getElementById("player-rock").textContent;
+let paper = document.getElementById("player-paper").textContent;
+let scissors = document.getElementById("player-scissors").textContent;
+let lizzard = document.getElementById("player-lizzard").textContent;
+let spock = document.getElementById("player-spock").textContent;
+
+
+
+
+
 switch (true) {
     case playerChoice === computerChoice:
         alert("It's a Draw, Try again!");
