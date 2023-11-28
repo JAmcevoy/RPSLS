@@ -2,15 +2,15 @@ function runGame();
 
 
 
-function playerChoice();
+function chackPlayerChoice();
 
 
 
-function computerChoice();
+function checkomputerChoice();
 
 
 
-function playerScore() {
+function addPlayerScore() {
 
     // Gets the current tally of incorrect answers from the DOM and increments it
 
@@ -21,7 +21,7 @@ function playerScore() {
 
 
 
-function computerScore() {
+function addComputerScore() {
 
     // Gets the current tally of incorrect answers from the DOM and increments it
 
