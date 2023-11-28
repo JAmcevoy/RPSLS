@@ -19,11 +19,12 @@
 <section id="game-section">
     <div id="player-section">
     
-        <button id="player-rock">Rock</button>
-        <button id="player-paper">Paper</button>
-        <button id="player-scissors">Scissors</button>
-        <button id="player-lizzard">Lizzard</button>
-        <button id="player-spock">Spock</button>
+        <button id="player-rock" onclick="getPlayerChoice('rock')" value="rock">Rock</button>
+        <button id="player-paper" onclick="getPlayerChoice('paper')" value="paper">Paper</button>
+        <button id="player-scissors" onclick="getPlayerChoice('scissors')" value="scissors">Scissors</button>
+        <button id="player-lizard" onclick="getPlayerChoice('lizard')" value="lizard">Lizzard</button>
+        <button id="player-spock" onclick="getPlayerChoice('spock')" value="spock">Spock</button>
+        <input type="text" id="hidden">
     
     </div>
     
@@ -46,7 +47,7 @@
         <button id="computer-rock" disabled>Rock</button>
         <button id="computer-paper" disabled>Paper</button>
         <button id="computer-scissors" disabled>Scissors</button>
-        <button id="computer-lizzard" disabled>Lizzard</button>
+        <button id="computer-lizard" disabled>Lizard</button>
         <button id="computer-spock" disabled>Spock</button>
     
     </div>

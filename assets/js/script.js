@@ -1,6 +1,46 @@
-function getPlayerChoice(){
-    
+
+/**
+ * Get the users input by logging the value to a hidden field. Also, Clears the 
+ * field of any buttons already pressed. 
+ */
+function getPlayerChoice(value) {
+
+    if (value === "rock") {
+
+        document.getElementById("hidden").value = "";
+        let rock = document.getElementById("player-rock");
+        document.getElementById("hidden").value += "rock";
+
+    } else if (value === "paper") {
+
+        document.getElementById("hidden").value = "";
+        let paper = document.getElementById("player-paper");
+        document.getElementById("hidden").value += "paper";
+
+    } else if (value === "scissors") {
+
+        document.getElementById("hidden").value = "";
+        let scissors = document.getElementById("player-scissors");
+        document.getElementById("hidden").value += "scissors";
+
+    } else if (value === "lizard") {
+
+        document.getElementById("hidden").value = "";
+        let lizard = document.getElementById("player-lizard");
+        document.getElementById("hidden").value += "lizard";
+
+    } else if (value === "spock") {
+
+        document.getElementById("hidden").value = "";
+        let spock = document.getElementById("player-spock");
+        document.getElementById("hidden").value += "spock";
+
+    } else {
+        alert("No selection has been made!");
+    }
+
 }
+
 
 
 /**
@@ -15,56 +55,49 @@ function getComputerChoice() {
     } else if (comChoice == 2) {
         return 'scissors';
     } else if (comChoice == 3) {
-        return 'lizzard';
+        return 'lizard';
     } else if (comChoice == 4) {
-        return 'spock'
+        return 'spock';
     }
 }
 
-
-
-let rock = document.getElementById("player-rock").textContent;
-let paper = document.getElementById("player-paper").textContent;
-let scissors = document.getElementById("player-scissors").textContent;
-let lizzard = document.getElementById("player-lizzard").textContent;
-let spock = document.getElementById("player-spock").textContent;
 
 
 
 
 
 switch (true) {
-    case playerChoice === computerChoice:
+    case getPlayerChoice === getComputerChoice:
         alert("It's a Draw, Try again!");
         break;
-    case playerChoice === scissors && computerChoice === paper:
+    case getPlayerChoice === scissors && getComputerChoice === paper:
         alerts("Scissors cuts Paper");
         break;
-    case playerChoice === paper && computerChoice === rock:
+    case getPlayerChoice === paper && getComputerChoice === rock:
         alerts("Paper covers Rock");
         break;
-    case playerChoice === rock && computerChoice === lizzard:
+    case getPlayerChoice === rock && getComputerChoice === lizard:
         alerts("Rock crushes Lizard");
         break;
-    case playerChoice === lizzard && computerChoice === spock:
-        alerts("Lizard poisons Spock")
+    case getPlayerChoice === lizard && getComputerChoice === spock:
+        alerts("Lizard poisons Spock");
         break;
-    case playerChoice === spock && computerChoice === scissors:
+    case getPlayerChoice === spock && getComputerChoice === scissors:
         alerts("Spock smashes Scissors");
         break;
-    case playerChoice === scissors && computerChoice === lizzard:
+    case getPlayerChoice === scissors && getComputerChoice === lizard:
         alerts("Scissors decapitates Lizard");
         break;
-    case playerChoice === lizzard && computerChoice === paper:
+    case getPlayerChoice === lizard && getComputerChoice === paper:
         alerts("Lizard eats Paper");
         break;
-    case playerChoice === paper && computerChoice === spock:
+    case getPlayerChoice === paper && getComputerChoice === spock:
         alerts("Paper disproves Spock");
         break;
-    case playerChoice === spock && computerChoice === rock:
+    case getPlayerChoice === spock && getComputerChoice === rock:
         alerts("Spock vaporizes Rock");
         break;
-    case playerChoice === rock && computerChoice === scissors:
+    case getPlayerChoice === rock && getComputerChoice === scissors:
         alerts("Rock crushes Scissors");
         break;
 }
