@@ -73,17 +73,25 @@ button {
 /* scores style */
 
 #player-scores {
-    background-color: cadetblue;
+    
     font-size: small;
-    font-weight: 700;
+    font-weight: 900;
     margin-right: 5px;
 }
 
 #computer-scores {
-    background-color: rgb(214, 40, 40);
+    
     font-size: small;
-    font-weight: 700;
+    font-weight: 900;
     margin-left: 5px;
+}
+
+#win {
+    color: green;
+}
+
+#lose {
+    color: red;
 }
 
  /* rules section style */
@@ -133,13 +141,30 @@ button {
         width: 400px;
         height: 150px;
     }
+
+    #player-scores {
+    margin-right: 15px;
+}
+
+#computer-scores {
+    margin-left: 15px;
+}
 }
 
 @media screen and (min-width: 900px) {
     #game-info {
         padding-left: 50px;
         padding-right: 50px;
+        align-content: center;
     }
 
-    
+    #player-scores {
+        font-size: larger;
+        margin: 0;
+    }
+
+    #computer-scores {
+        font-size: larger;
+        margin: 0;
+    }
 }
