@@ -1,35 +1,35 @@
 switch (true) {
-    case computerChoice === playerChoice:
+    case playerChoice === computerChoice:
         alert("It's a Draw, Try again!");
         break;
-    case computerChoice === scissors && playerChoice === paper:
+    case playerChoice === scissors && computerChoice === paper:
         alerts("Scissors cuts Paper");
         break;
-    case computerChoice === paper && playerChoice === rock:
+    case playerChoice === paper && computerChoice === rock:
         alerts("Paper covers Rock");
         break;
-    case computerChoice === rock && playerChoice === lizzard:
+    case playerChoice === rock && computerChoice === lizzard:
         alerts("Rock crushes Lizard");
         break;
-    case computerChoice === lizzard && playerChoice === spock:
+    case playerChoice === lizzard && computerChoice === spock:
         alerts("Lizard poisons Spock")
         break;
-    case computerChoice === spock && playerChoice === scissors:
+    case playerChoice === spock && computerChoice === scissors:
         alerts("Spock smashes Scissors");
         break;
-    case computerChoice === scissors && playerChoice === lizzard:
+    case playerChoice === scissors && computerChoice === lizzard:
         alerts("Scissors decapitates Lizard");
         break;
-    case computerChoice === lizzard && playerChoice === paper:
+    case playerChoice === lizzard && computerChoice === paper:
         alerts("Lizard eats Paper");
         break;
-    case computerChoice === paper && playerChoice === spock:
+    case playerChoice === paper && computerChoice === spock:
         alerts("Paper disproves Spock");
         break;
-    case computerChoice === spock && playerChoice === rock:
+    case playerChoice === spock && computerChoice === rock:
         alerts("Spock vaporizes Rock");
         break;
-    case computerChoice === rock && playerChoice === scissors:
+    case playerChoice === rock && computerChoice === scissors:
         alerts("Rock crushes Scissors");
         break;
 }
