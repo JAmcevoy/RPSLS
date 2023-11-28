@@ -1,0 +1,73 @@
+/* google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@300&family=Oswald:wght@200&family=Sofia+Sans:wght@300&display=swap');
+
+/* default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    text-align: center;
+    font-family: 'Sofia Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Sections to hold button for player and computer */
+#player-section {
+
+    width: 200px;
+    height: 200px;
+    background-color: cadetblue;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    padding: 10px;
+    margin: auto;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+#computer-section {
+
+    width: 200px;
+    height: 200px;
+    background-color: rgb(214, 40, 40);
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    padding: 10px;
+    margin: auto;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+button {
+    display: block;
+    padding: 0px 20px;
+    height: 40px;
+    background-color: #666666;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+#shoot {
+    margin-left: 35%;
+    background-color: green;
+    border-radius: 45%;
+
+}
+
+#rules {
+    background-color: burlywood;
+    border: 1px solid black;
+    border-radius: 15%;
+    padding: 10px;
+}
