@@ -66,6 +66,10 @@ button {
 
 }
 
+button:active {
+    background-color: green;
+}
+
 #shoot {
     margin: auto;
     background-color: green;
