@@ -148,19 +148,20 @@ function checkRules() {
     }
 }
 
-
+/**
+ * Gets the current score from the DOM and increments it
+ */
 function winScore() {
-
-    // Gets the current score from the DOM and increments it
 
     let oldScore = parseInt(document.getElementById("win").innerText);
     document.getElementById("win").innerText = ++oldScore;
 
 }
 
+/**
+ * Gets the current tally of incorrect answers from the DOM and increments it
+ */
 function loseScore() {
-
-    // Gets the current tally of incorrect answers from the DOM and increments it
 
     let oldScore = parseInt(document.getElementById("lose").innerText);
     document.getElementById("lose").innerText = ++oldScore;
