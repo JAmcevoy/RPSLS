@@ -189,7 +189,7 @@
 
         if (oldScore === 7) {
 
-            alert("BAZINGA! Sheldon has won 7 games first");
+            alert("BAZINGA! Sheldon has won 7 games first!");
             document.getElementById("win").innerText = 0;
             document.getElementById("lose").innerText = 0;
 
