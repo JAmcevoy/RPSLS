@@ -156,6 +156,7 @@ function checkRules() {
         default:
             break;
     }
+
 }
 
 /**

@@ -149,13 +149,16 @@ button {
 
     #player-scores {
     margin-right: 15px;
+    font-size: large;
 }
 
 #computer-scores {
     margin-left: 15px;
+    font-size: large;
 }
 }
 
+/* media query for screens large than 900px (laptops, pcs ect) */
 @media screen and (min-width: 900px) {
     
     #game-section {
