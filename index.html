@@ -6,6 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="Description" content="Test Your Luck Against The Mightly Sheldon Cooper in the challeneging game of Rock, Paper, Scissors, Lizzard, Spock"/>
 <link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="assets/icon/bolt-lightning-solid.svg">
 <title>R.P.S.L.S</title>
 </head>
 <body>
@@ -19,11 +20,11 @@
 <section id="game-section">
     <div id="player-section">
     
-        <button id="player-rock" onclick="getPlayerChoice('rock')" value="rock">Rock</button>
-        <button id="player-paper" onclick="getPlayerChoice('paper')" value="paper">Paper</button>
-        <button id="player-scissors" onclick="getPlayerChoice('scissors')" value="scissors">Scissors</button>
-        <button id="player-lizard" onclick="getPlayerChoice('lizard')" value="lizard">Lizard</button>
-        <button id="player-spock" onclick="getPlayerChoice('spock')" value="spock">Spock</button>
+        <button id="player-rock" onclick="getPlayerChoice('rock')" value="rock">Rock <i class="fa-solid fa-hand-back-fist"></i></button>
+        <button id="player-paper" onclick="getPlayerChoice('paper')" value="paper">Paper <i class="fa-solid fa-hand"></i></button>
+        <button id="player-scissors" onclick="getPlayerChoice('scissors')" value="scissors">Scissors <i class="fa-solid fa-hand-scissors"></i></button>
+        <button id="player-lizard" onclick="getPlayerChoice('lizard')" value="lizard">Lizard <i class="fa-solid fa-hand-lizard"></i></button>
+        <button id="player-spock" onclick="getPlayerChoice('spock')" value="spock">Spock <i class="fa-solid fa-hand-spock"></i></button>
         <input type="text" id="hidden">
     
     </div>
@@ -44,11 +45,11 @@
     
     <div id="computer-section">
     
-        <button id="computer-rock" disabled>Rock</button>
-        <button id="computer-paper" disabled>Paper</button>
-        <button id="computer-scissors" disabled>Scissors</button>
-        <button id="computer-lizard" disabled>Lizard</button>
-        <button id="computer-spock" disabled>Spock</button>
+        <button id="computer-rock" disabled>Rock <i class="fa-regular fa-hand-back-fist"></i></button>
+        <button id="computer-paper" disabled>Paper <i class="fa-regular fa-hand"></i></button>
+        <button id="computer-scissors" disabled>Scissors <i class="fa-regular fa-hand-scissors"></i></button>
+        <button id="computer-lizard" disabled>Lizard <i class="fa-regular fa-hand-lizard"></i></button>
+        <button id="computer-spock" disabled>Spock <i class="fa-regular fa-hand-spock"></i></button>
     
     </div>
 </section>
@@ -64,5 +65,6 @@
 
 
 <script src="assets/js/script.js"></script>
+<script src="https://kit.fontawesome.com/710fe75826.js" crossorigin="anonymous"></script>
 </body>
 </html>

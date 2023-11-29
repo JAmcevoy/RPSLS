@@ -161,6 +161,7 @@
 
     /**
      * Gets the current score from the DOM and increments it
+     * then when score gets to 7 sets back to 0 and displays alert for win
      */
     function winScore() {
 
@@ -169,7 +170,7 @@
 
         if (oldScore === 7) {
 
-            alert("Congratulations! You won 7 games!");
+            alert("Congratulations! You have won 7 games first!");
             document.getElementById("win").innerText = 0;
             document.getElementById("lose").innerText = 0;
 
@@ -179,6 +180,7 @@
 
     /**
      * Gets the current tally of incorrect answers from the DOM and increments it
+     * then when score gets to 7 sets back to 0 and displays alert for lose
      */
     function loseScore() {
 
@@ -187,7 +189,7 @@
 
         if (oldScore === 7) {
 
-            alert("BAZINGA! Sheldon won 7 games");
+            alert("BAZINGA! Sheldon has won 7 games first");
             document.getElementById("win").innerText = 0;
             document.getElementById("lose").innerText = 0;
 
