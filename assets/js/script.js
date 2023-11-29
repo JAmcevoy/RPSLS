@@ -64,68 +64,105 @@ function checkRules() {
             break;
         case playChoice === 'scissors' && comChoice === 'paper':
             alert("You Win! Scissors cuts Paper");
+            winScore();
             break;
         case playChoice === 'paper' && comChoice === 'rock':
             alert("You Win! Paper covers Rock");
+            winScore();
             break;
         case playChoice === 'rock' && comChoice === 'lizard':
             alert("You Win! Rock crushes Lizard");
+            winScore();
             break;
         case playChoice === 'lizard' && comChoice === 'spock':
             alert("You Win! Lizard poisons Spock");
+            winScore();
             break;
         case playChoice === 'spock' && comChoice === 'scissors':
             alert("You Win! Spock smashes Scissors");
+            winScore();
             break;
         case playChoice === 'scissors' && comChoice === 'lizard':
             alert("You Win! Scissors decapitates Lizard");
+            winScore();
             break;
         case playChoice === 'lizard' && comChoice === 'paper':
             alert("You Win! Lizard eats Paper");
+            winScore();
             break;
         case playChoice === 'paper' && comChoice === 'spock':
             alert("You Win! Paper disproves Spock");
+            winScore();
             break;
         case playChoice === 'spock' && comChoice === 'rock':
             alert("You Win! Spock vaporizes Rock");
+            winScore();
             break;
         case playChoice === 'rock' && comChoice === 'scissors':
             alert("You Win! Rock crushes Scissors");
+            winScore();
             break;
         case comChoice === 'scissors' && playChoice === 'paper':
             alert("You Loose! Scissors cuts Paper");
+            loseScore();
             break;
         case comChoice === 'paper' && playChoice === 'rock':
             alert("You Loose! Paper covers Rock");
+            loseScore();
             break;
         case comChoice === 'rock' && playChoice === 'lizard':
             alert("You Loose! Rock crushes Lizard");
+            loseScore();
             break;
         case comChoice === 'lizard' && playChoice === 'spock':
             alert("You Loose! Lizard poisons Spock");
+            loseScore();
             break;
         case comChoice === 'spock' && playChoice === 'scissors':
             alert("You Loose! Spock smashes Scissors");
+            loseScore();
             break;
         case comChoice === 'scissors' && playChoice === 'lizard':
             alert("You Loose! Scissors decapitates Lizard");
+            loseScore();
             break;
         case comChoice === 'lizard' && playChoice === 'paper':
             alert("You Loose! Lizard eats Paper");
+            loseScore();
             break;
         case comChoice === 'paper' && playChoice === 'spock':
             alert("You Loose! Paper disproves Spock");
+            loseScore();
             break;
         case comChoice === 'spock' && playChoice === 'rock':
             alert("You Loose! Spock vaporizes Rock");
+            loseScore();
             result = "You Loose!";
             break;
         case comChoice === 'rock' && playChoice === 'scissors':
             alert("You Loose! Rock crushes Scissors");
+            loseScore();
             break;
         default:
             break;
     }
 }
 
-checkRules();
+
+function winScore() {
+
+    // Gets the current score from the DOM and increments it
+
+    let oldScore = parseInt(document.getElementById("win").innerText);
+    document.getElementById("win").innerText = ++oldScore;
+
+}
+
+function loseScore() {
+
+    // Gets the current tally of incorrect answers from the DOM and increments it
+
+    let oldScore = parseInt(document.getElementById("lose").innerText);
+    document.getElementById("lose").innerText = ++oldScore;
+
+}
