@@ -178,3 +178,21 @@ function loseScore() {
     document.getElementById("lose").innerText = ++oldScore;
 
 }
+
+function endGame() {
+
+    let winCount = document.getElementById('win');
+    let loseCount = document.getElementById('lose');
+
+    if (winCount === 7) {
+        alert("Congratulations! You won 7 games!");
+        document.getElementById("win").innerText = 0;
+        document.getElementById("lose").innerText = 0;
+    } else if (loseCount === 7) {
+        alert("BAZINGA! Sheldon won 7 games");
+        document.getElementById("win").innerText = 0;
+        document.getElementById("lose").innerText = 0;
+
+    }
+
+}
