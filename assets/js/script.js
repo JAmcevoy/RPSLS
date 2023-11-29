@@ -1,81 +1,3 @@
-
-function checkRules() {
-
-    let comChoice = getComputerChoice();
-    console.log(getComputerChoice());
-
-    let playChoice = document.getElementById("hidden").value;
-    console.log(playChoice);
-
-    switch (true) {
-        case playChoice === comChoice:
-            alert("It's a Draw, Try again!");
-            break;
-        case playChoice === 'scissors' && comChoice === 'paper':
-            alert("Scissors cuts Paper");
-            break;
-        case playChoice === 'paper' && comChoice === 'rock':
-            alert("Paper covers Rock");
-            break;
-        case playChoice === 'rock' && comChoice === 'lizard':
-            alert("Rock crushes Lizard");
-            break;
-        case playChoice === 'lizard' && comChoice === 'spock':
-            alert("Lizard poisons Spock");
-            break;
-        case playChoice === 'spock' && comChoice === 'scissors':
-            alert("Spock smashes Scissors");
-            break;
-        case playChoice === 'scissors' && comChoice === 'lizard':
-            alert("Scissors decapitates Lizard");
-            break;
-        case playChoice === 'lizard' && comChoice === 'paper':
-            alert("Lizard eats Paper");
-            break;
-        case playChoice === 'paper' && comChoice === 'spock':
-            alert("Paper disproves Spock");
-            break;
-        case playChoice === 'spock' && comChoice === 'rock':
-            alert("Spock vaporizes Rock");
-            break;
-        case playChoice === 'rock' && comChoice === 'scissors':
-            alert("Rock crushes Scissors");
-            break;
-        case comChoice === 'scissors' && playChoice === 'paper':
-            alert("Scissors cuts Paper");
-            break;
-        case comChoice === 'paper' && playChoice === 'rock':
-            alert("Paper covers Rock");
-            break;
-        case comChoice === 'rock' && playChoice === 'lizard':
-            alert("Rock crushes Lizard");
-            break;
-        case comChoice === 'lizard' && playChoice === 'spock':
-            alert("Lizard poisons Spock");
-            break;
-        case comChoice === 'spock' && playChoice === 'scissors':
-            alert("Spock smashes Scissors");
-            break;
-        case comChoice === 'scissors' && playChoice === 'lizard':
-            alert("Scissors decapitates Lizard");
-            break;
-        case comChoice === 'lizard' && playChoice === 'paper':
-            alert("Lizard eats Paper");
-            break;
-        case comChoice === 'paper' && playChoice === 'spock':
-            alert("Paper disproves Spock");
-            break;
-        case comChoice === 'spock' && playChoice === 'rock':
-            alert("Spock vaporizes Rock");
-            break;
-        case comChoice === 'rock' && playChoice === 'scissors':
-            alert("Rock crushes Scissors");
-            break;
-        default:
-            break;
-    }
-}
-
 /**
  * Get the users input by logging the value to a hidden field. Also, Clears the 
  * field of any buttons already pressed. 
@@ -111,16 +33,99 @@ function getPlayerChoice(value) {
  */
 function getComputerChoice() {
 
-    let comChoice = Math.floor(Math.random() * 5);
-    if (comChoice == 0) {
+    const randomNumber = Math.floor(Math.random() * 5);
+    if (randomNumber == 0) {
         return 'rock';
-    } else if (comChoice == 1) {
+    } else if (randomNumber == 1) {
         return 'paper';
-    } else if (comChoice == 2) {
+    } else if (randomNumber == 2) {
         return 'scissors';
-    } else if (comChoice == 3) {
+    } else if (randomNumber == 3) {
         return 'lizard';
-    } else if (comChoice == 4) {
+    } else if (randomNumber == 4) {
         return 'spock';
     }
 }
+
+/**
+ * Checks switch for matching values
+ * displays an alerts with win or loose and the rules as to why. */
+function checkRules() {
+
+    let playChoice = document.getElementById("hidden").value;
+    console.log(playChoice);
+
+    let comChoice = getComputerChoice();
+    console.log(comChoice);
+
+    switch (true) {
+        case playChoice === comChoice:
+            alert("It's a Draw, Try again!");
+            break;
+        case playChoice === 'scissors' && comChoice === 'paper':
+            alert("You Win! Scissors cuts Paper");
+            break;
+        case playChoice === 'paper' && comChoice === 'rock':
+            alert("You Win! Paper covers Rock");
+            break;
+        case playChoice === 'rock' && comChoice === 'lizard':
+            alert("You Win! Rock crushes Lizard");
+            break;
+        case playChoice === 'lizard' && comChoice === 'spock':
+            alert("You Win! Lizard poisons Spock");
+            break;
+        case playChoice === 'spock' && comChoice === 'scissors':
+            alert("You Win! Spock smashes Scissors");
+            break;
+        case playChoice === 'scissors' && comChoice === 'lizard':
+            alert("You Win! Scissors decapitates Lizard");
+            break;
+        case playChoice === 'lizard' && comChoice === 'paper':
+            alert("You Win! Lizard eats Paper");
+            break;
+        case playChoice === 'paper' && comChoice === 'spock':
+            alert("You Win! Paper disproves Spock");
+            break;
+        case playChoice === 'spock' && comChoice === 'rock':
+            alert("You Win! Spock vaporizes Rock");
+            break;
+        case playChoice === 'rock' && comChoice === 'scissors':
+            alert("You Win! Rock crushes Scissors");
+            break;
+        case comChoice === 'scissors' && playChoice === 'paper':
+            alert("You Loose! Scissors cuts Paper");
+            break;
+        case comChoice === 'paper' && playChoice === 'rock':
+            alert("You Loose! Paper covers Rock");
+            break;
+        case comChoice === 'rock' && playChoice === 'lizard':
+            alert("You Loose! Rock crushes Lizard");
+            break;
+        case comChoice === 'lizard' && playChoice === 'spock':
+            alert("You Loose! Lizard poisons Spock");
+            break;
+        case comChoice === 'spock' && playChoice === 'scissors':
+            alert("You Loose! Spock smashes Scissors");
+            break;
+        case comChoice === 'scissors' && playChoice === 'lizard':
+            alert("You Loose! Scissors decapitates Lizard");
+            break;
+        case comChoice === 'lizard' && playChoice === 'paper':
+            alert("You Loose! Lizard eats Paper");
+            break;
+        case comChoice === 'paper' && playChoice === 'spock':
+            alert("You Loose! Paper disproves Spock");
+            break;
+        case comChoice === 'spock' && playChoice === 'rock':
+            alert("You Loose! Spock vaporizes Rock");
+            result = "You Loose!";
+            break;
+        case comChoice === 'rock' && playChoice === 'scissors':
+            alert("You Loose! Rock crushes Scissors");
+            break;
+        default:
+            break;
+    }
+}
+
+checkRules();
