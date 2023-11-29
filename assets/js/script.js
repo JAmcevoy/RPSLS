@@ -33,18 +33,28 @@ function getPlayerChoice(value) {
  */
 function getComputerChoice() {
 
-    const randomNumber = Math.floor(Math.random() * 5);
-    if (randomNumber == 0) {
-        return 'rock';
-    } else if (randomNumber == 1) {
-        return 'paper';
-    } else if (randomNumber == 2) {
-        return 'scissors';
-    } else if (randomNumber == 3) {
-        return 'lizard';
-    } else if (randomNumber == 4) {
-        return 'spock';
+    let randomNumber = Math.floor(Math.random() * 5);
+
+    switch (true) {
+        case randomNumber === 0:
+            return 'rock';
+            break;
+        case randomNumber === 1:
+            return 'paper';
+            break;
+        case randomNumber === 2:
+            return 'scissors';
+            break;
+        case randomNumber === 3:
+            return 'lizard';
+            break;
+        case randomNumber === 4:
+            return 'spock';
+            break;
+        default:
+            break;
     }
+
 }
 
 /**
