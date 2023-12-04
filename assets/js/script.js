@@ -5,27 +5,8 @@
 function getPlayerChoice(value) {
 
     document.getElementById("hidden").value = "";
+    document.getElementById("hidden").value = value;
 
-    switch (value) {
-        case "rock":
-            document.getElementById("hidden").value = "rock";
-            break;
-        case "paper":
-            document.getElementById("hidden").value = "paper";
-            break;
-        case "scissors":
-            document.getElementById("hidden").value = "scissors";
-            break;
-        case "lizard":
-            document.getElementById("hidden").value = "lizard";
-            break;
-        case "spock":
-            document.getElementById("hidden").value = "spock";
-            break;
-        default:
-            alert("No selection has been made!");
-            break;
-    }
 }
 
 /**
