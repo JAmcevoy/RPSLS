@@ -1,3 +1,11 @@
+const winConditionsMap = new Map([
+    ['rock', new Set(['lizard', 'scissors'])],
+    ['paper', new Set(['rock', 'spock'])],
+    ['scissors', new Set(['paper', 'lizard'])],
+    ['lizard', new Set(['spock', 'paper'])],
+    ['spock', new Set(['scissors', 'rock'])],
+]);
+
 /**
  * Get the users input by logging the value to a hidden field. Also, Clears the 
  * field of any buttons already pressed. 
@@ -6,6 +14,7 @@ function getPlayerChoice(value) {
 
     document.getElementById("hidden").value = "";
     document.getElementById("hidden").value = value;
+    
 
 }
 
@@ -22,103 +31,33 @@ function getComputerChoice() {
 
 
 /**
- * Checks switch for matching values
- * displays an alerts with win or loose and the rules as to why. */
-function checkRules() {
+ * Gets both values when the shoot button is clicked
+ */
+function checkValues() {
 
-    let playChoice = document.getElementById("hidden").value;
-    console.log(playChoice);
+        let playChoice = document.getElementById("hidden").value;
+        console.log(playChoice);
 
-    let comChoice = getComputerChoice();
-    console.log(comChoice);
+        let comChoice = getComputerChoice();
+        console.log(comChoice);
 
-    switch (true) {
-        case playChoice === comChoice:
-            alert("It's a Draw, Try again!");
-            break;
-        case playChoice === 'scissors' && comChoice === 'paper':
-            alert("You Win! Scissors cuts Paper");
-            winScore();
-            break;
-        case playChoice === 'paper' && comChoice === 'rock':
-            alert("You Win! Paper covers Rock");
-            winScore();
-            break;
-        case playChoice === 'rock' && comChoice === 'lizard':
-            alert("You Win! Rock crushes Lizard");
-            winScore();
-            break;
-        case playChoice === 'lizard' && comChoice === 'spock':
-            alert("You Win! Lizard poisons Spock");
-            winScore();
-            break;
-        case playChoice === 'spock' && comChoice === 'scissors':
-            alert("You Win! Spock smashes Scissors");
-            winScore();
-            break;
-        case playChoice === 'scissors' && comChoice === 'lizard':
-            alert("You Win! Scissors decapitates Lizard");
-            winScore();
-            break;
-        case playChoice === 'lizard' && comChoice === 'paper':
-            alert("You Win! Lizard eats Paper");
-            winScore();
-            break;
-        case playChoice === 'paper' && comChoice === 'spock':
-            alert("You Win! Paper disproves Spock");
-            winScore();
-            break;
-        case playChoice === 'spock' && comChoice === 'rock':
-            alert("You Win! Spock vaporizes Rock");
-            winScore();
-            break;
-        case playChoice === 'rock' && comChoice === 'scissors':
-            alert("You Win! Rock crushes Scissors");
-            winScore();
-            break;
-        case comChoice === 'scissors' && playChoice === 'paper':
-            alert("You Loose! Scissors cuts Paper");
-            loseScore();
-            break;
-        case comChoice === 'paper' && playChoice === 'rock':
-            alert("You Loose! Paper covers Rock");
-            loseScore();
-            break;
-        case comChoice === 'rock' && playChoice === 'lizard':
-            alert("You Loose! Rock crushes Lizard");
-            loseScore();
-            break;
-        case comChoice === 'lizard' && playChoice === 'spock':
-            alert("You Loose! Lizard poisons Spock");
-            loseScore();
-            break;
-        case comChoice === 'spock' && playChoice === 'scissors':
-            alert("You Loose! Spock smashes Scissors");
-            loseScore();
-            break;
-        case comChoice === 'scissors' && playChoice === 'lizard':
-            alert("You Loose! Scissors decapitates Lizard");
-            loseScore();
-            break;
-        case comChoice === 'lizard' && playChoice === 'paper':
-            alert("You Loose! Lizard eats Paper");
-            loseScore();
-            break;
-        case comChoice === 'paper' && playChoice === 'spock':
-            alert("You Loose! Paper disproves Spock");
-            loseScore();
-            break;
-        case comChoice === 'spock' && playChoice === 'rock':
-            alert("You Loose! Spock vaporizes Rock");
-            loseScore();
-            result = "You Loose!";
-            break;
-        case comChoice === 'rock' && playChoice === 'scissors':
-            alert("You Loose! Rock crushes Scissors");
-            loseScore();
-            break;
-        default:
-            break;
+    compare(playChoice, comChoice);
+
+}
+
+/**
+ * Compares the Player and Computer Values.
+ */
+function compare(playChoice, comChoice) {
+
+    let winningMoves = winConditionsMap.get(playChoice);
+
+    if (winningMoves && winningMoves.has(comChoice)) {
+        alert(`You Win! ${playChoice} beats ${comChoice}`);
+        winScore();
+    } else {
+        alert("You didn't win this round.");
+        loseScore();
     }
 
 }
