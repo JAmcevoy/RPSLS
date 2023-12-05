@@ -1,12 +1,12 @@
 # Rock, Paper, Scissors, Lizard, Spock.
 
-[R.P.S.L.S](https://jamcevoy.github.io/Peace_of_Mind/)
+[R.P.S.L.S](https://jamcevoy.github.io/R.P.S.L.S/)
 
 R.P.S.L.S is my spin on the sitcom favourite game of Rock, Paper, Scissors, Lizard, Spock.
 
 My aims for this game is that it will be accessavle to mulitple ages groups with a easy to understand design and fun little throw back to the show. Like for example your opponent is the mighty Sheldon Cooper.
 
-![Responsice Mockup]()
+![Responsice Mockup](docs/images/response.JPG)
 
 ## User Needs
 
@@ -16,7 +16,28 @@ My aims for this game is that it will be accessavle to mulitple ages groups with
 - I would need a section where the rule would be displayed at all times.
 - Somewhere to keep score.
 
-## Features
+## Rules 
+
+- Scissors cuts Paper
+- Paper covers Rock
+- Rock crushes Lizard
+- Lizard poisons Spock
+- Spock smashes Scissors
+- Scissors decapitates Lizard
+- Lizard eats Paper
+- Paper disproves Spock
+- Spock vaporizes Rock
+- Rock crushes Scissors
+
+## Planned Design.
+
+### Large Screen Layout.
+![Large Screen](docs/images/pcscreen_layout.JPG)
+### Types of Elements.
+![Types Layout](docs/images/layout_of_divs_and_types.JPG)
+### Small Screen Layout.
+![Small Screen](docs/images/phone_screen_planned_layout.JPG)
+
 
 ### Existing Features
 
@@ -65,7 +86,7 @@ This section should describe the process you went through to deploy the project 
   - From the source section drop-down menu, select the Master Branch
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-The live link can be found here - <https://jamcevoy.github.io/Peace_of_Mind/index.html>
+The live link can be found here - <h<https://jamcevoy.github.io/R.P.S.L.S/>>
 
 ## Credits
 
