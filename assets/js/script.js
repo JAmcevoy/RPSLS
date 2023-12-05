@@ -14,7 +14,7 @@ function getPlayerChoice(value) {
 
     document.getElementById("hidden").value = "";
     document.getElementById("hidden").value = value;
-    
+
 
 }
 
@@ -29,17 +29,17 @@ function getComputerChoice() {
 
 }
 
-
 /**
  * Gets both values when the shoot button is clicked
  */
 function checkValues() {
 
-        let playChoice = document.getElementById("hidden").value;
-        console.log(playChoice);
+    let playChoice = document.getElementById("hidden").value;
+    console.log(playChoice);
 
-        let comChoice = getComputerChoice();
-        console.log(comChoice);
+    let comChoice = getComputerChoice();
+    changeButtonColor(comChoice);
+    console.log(comChoice);
 
     compare(playChoice, comChoice);
 
@@ -55,8 +55,12 @@ function compare(playChoice, comChoice) {
     if (winningMoves && winningMoves.has(comChoice)) {
         alert(`You Win! ${playChoice} beats ${comChoice}`);
         winScore();
+    } else if (playChoice === comChoice) {
+
+        alert("It's a Draw, Try again!");
+
     } else {
-        alert("You didn't win this round.");
+        alert(`You Loose! ${comChoice} beats ${playChoice}`);
         loseScore();
     }
 
@@ -96,6 +100,27 @@ function loseScore() {
         document.getElementById("win").innerText = 0;
         document.getElementById("lose").innerText = 0;
 
+    }
+
+}
+
+function changeButtonColor(comChoice) {
+
+    if (comChoice === 'rock') {
+        let com_rock = document.getElementById("computer-rock");
+        com_rock.style.backgroundColor = "green";
+    } else if (comChoice === 'paper') {
+        let com_rock = document.getElementById("computer-paper");
+        com_rock.style.backgroundColor = "green";
+    } else if (comChoice === 'scissors') {
+        let com_rock = document.getElementById("computer-scissors");
+        com_rock.style.backgroundColor = "green";
+    } else if (comChoice === 'lizard') {
+        let com_rock = document.getElementById("computer-lizard");
+        com_rock.style.backgroundColor = "green";
+    } else if (comChoice === 'spock') {
+        let com_rock = document.getElementById("computer-spock");
+        com_rock.style.backgroundColor = "green";
     }
 
 }
