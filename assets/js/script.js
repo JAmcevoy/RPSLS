@@ -122,5 +122,4 @@ function changeButtonColor(comChoice) {
         let com_rock = document.getElementById("computer-spock");
         com_rock.style.backgroundColor = "green";
     }
-
 }
