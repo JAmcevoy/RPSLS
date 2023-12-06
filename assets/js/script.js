@@ -88,7 +88,7 @@ function loseScore() {
     document.getElementById("lose").innerText = ++oldScore;
 
     if (oldScore === 7) {
-        // alert("BAZINGA! Sheldon has won 7 games first!");
+       
         document.getElementById("catchphrase").innerText = "BAZINGA!";
         document.getElementById("winner").innerText =
             "Sheldon has won 7 games first!";
