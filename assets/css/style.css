@@ -73,7 +73,7 @@ button {
 
 }
 
-button:active {
+#player-section button:focus {
     background-color: green;
 }
 

@@ -14,8 +14,6 @@ function getPlayerChoice(value) {
 
     document.getElementById("hidden").value = "";
     document.getElementById("hidden").value = value;
-
-
 }
 
 /**
@@ -104,6 +102,9 @@ function loseScore() {
 
 }
 
+/**
+ * Changes the computers button color based on which value the computer picks.
+ */
 function changeButtonColor(comChoice) {
 
     ['rock', 'paper', 'scissors', 'lizard', 'spock'].forEach(choice => {
