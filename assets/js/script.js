@@ -53,14 +53,14 @@ function compare(playChoice, comChoice) {
     let winningMoves = winConditionsMap.get(playChoice);
 
     if (winningMoves && winningMoves.has(comChoice)) {
-        alert(`You Win! ${playChoice} beats ${comChoice}`);
+        // alert(`You Win! ${playChoice} beats ${comChoice}`);
         winScore();
     } else if (playChoice === comChoice) {
 
         alert("It's a Draw, Try again!");
 
     } else {
-        alert(`You Loose! ${comChoice} beats ${playChoice}`);
+        // alert(`You Loose! ${comChoice} beats ${playChoice}`);
         loseScore();
     }
 
@@ -104,22 +104,45 @@ function loseScore() {
 
 }
 
-function changeButtonColor(comChoice) {
+function changeButtonColor(comChoice, playChoice) {
+
+    document.getElementById("computer-rock").style.backgroundColor = "";
+    document.getElementById("computer-paper").style.backgroundColor = "";
+    document.getElementById("computer-scissors").style.backgroundColor = "";
+    document.getElementById("computer-lizard").style.backgroundColor = "";
+    document.getElementById("computer-spock").style.backgroundColor = "";
+
 
     if (comChoice === 'rock') {
-        let com_rock = document.getElementById("computer-rock");
-        com_rock.style.backgroundColor = "green";
+        document.getElementById("computer-rock").style.backgroundColor = "green";
     } else if (comChoice === 'paper') {
-        let com_rock = document.getElementById("computer-paper");
-        com_rock.style.backgroundColor = "green";
+        document.getElementById("computer-paper").style.backgroundColor = "green";
     } else if (comChoice === 'scissors') {
-        let com_rock = document.getElementById("computer-scissors");
-        com_rock.style.backgroundColor = "green";
+        document.getElementById("computer-scissors").style.backgroundColor = "green";
     } else if (comChoice === 'lizard') {
-        let com_rock = document.getElementById("computer-lizard");
-        com_rock.style.backgroundColor = "green";
+        document.getElementById("computer-lizard").style.backgroundColor = "green";
     } else if (comChoice === 'spock') {
-        let com_rock = document.getElementById("computer-spock");
-        com_rock.style.backgroundColor = "green";
+        document.getElementById("computer-spock").style.backgroundColor = "green";
     }
+
+    document.getElementById("player-rock").style.backgroundColor = "";
+    document.getElementById("player-paper").style.backgroundColor = "";
+    document.getElementById("player-scissors").style.backgroundColor = "";
+    document.getElementById("player-lizard").style.backgroundColor = "";
+    document.getElementById("player-spock").style.backgroundColor = "";
+
+
+    if (playChoice === 'rock') {
+        document.getElementById("player-rock").style.backgroundColor = "green";
+    } else if (playChoice === 'paper') {
+        document.getElementById("player-paper").style.backgroundColor = "green";
+    } else if (playChoice === 'scissors') {
+        document.getElementById("player-scissors").style.backgroundColor = "green";
+    } else if (playChoice === 'lizard') {
+        document.getElementById("player-lizard").style.backgroundColor = "green";
+    } else if (playChoice === 'spock') {
+        document.getElementById("player-spock").style.backgroundColor = "green";
+    }
+}
+
 }
