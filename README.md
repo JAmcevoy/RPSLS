@@ -8,7 +8,7 @@ My aims for this game is that it will be accessavle to mulitple ages groups with
 
 ![Responsice Mockup](docs/images/response.JPG)
 
-## User Needs
+# User Needs
 
 - I would want the game to be accessible from different devices (Phone, Laptop, PC, Tablet).
 - It would need to be responsive to all screens, ensuring the information is readable and understandable.
@@ -16,7 +16,7 @@ My aims for this game is that it will be accessavle to mulitple ages groups with
 - I would need a section where the rule would be displayed at all times.
 - Somewhere to keep score.
 
-## Rules 
+# Rules 
 
 - Scissors cuts Paper
 - Paper covers Rock
@@ -29,7 +29,7 @@ My aims for this game is that it will be accessavle to mulitple ages groups with
 - Spock vaporizes Rock
 - Rock crushes Scissors
 
-## Planned Design.
+# Planned Design.
 
 ### Large Screen Layout.
 ![Large Screen](docs/images/pcscreen_layout.JPG)
@@ -38,8 +38,49 @@ My aims for this game is that it will be accessavle to mulitple ages groups with
 ### Small Screen Layout.
 ![Small Screen](docs/images/phone_screen_planned_layout.JPG)
 
+# Features
 
 ### Existing Features
+
+#### Player Choices
+
+- The users buttons is where the player can select which option they choose. This then copies the value to a hidden field to be used in the game.
+- Each click resets the hidden field to blank to stop from any mistakes.
+- The button stays green once click to let the user know the option which will be played.
+
+![Player Choices](docs/images/user.JPG)
+
+#### Computer Choices
+
+- The computer choices are button like the user, However they dont have any function when clicked.
+- I kept the user choices to a red background colour to stay with theme of the big bang theory, Sheldons flash t-shirt. 
+- Once the random number is generated in the background it will change the background color to green as it does with the user chocies. They reset each turn using a function.
+
+![Computer Choices](docs/images/computer.JPG)
+
+#### Score and Shoot! 
+
+- This sections is where the main functionality of the game is. 
+- Here the score is kept each round starts with player 0 - Sheldon 0 and is reset after 7 wins have been achieved from either side.
+- The Submit button is used to run the game once this button is clicked it will call the checkRules function which brings the user and computer to a map and picks a winner off this rules.
+
+![Score and Shoot!](docs/images/score_and_play_btns.JPG)
+
+#### Rules 
+
+- The rules sections is a qoute taking directly from the show! By sheldon himself!
+- Again bring the origin of the game back to the show. 
+
+![Rules](docs/images/rules.JPG)
+
+#### Game Over 
+
+- Once a player or Computer wins 7 games it calls a function openPopup which displays the box below the text is different based on weather the player won of the user won.
+- When the computer wins you will see another nod to the bing bang theory being that Sheldons catchphrase is displayed.
+- If the user wins you get a simple congratulations!
+- The Close button on the popup calls a closePopup Function so we can close the pop up and try again.
+
+![Game Over](docs/images/game_over.JPG)
 
 ### Features Left to Implement
 
