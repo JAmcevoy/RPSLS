@@ -104,45 +104,14 @@ function loseScore() {
 
 }
 
-function changeButtonColor(comChoice, playChoice) {
+function changeButtonColor(comChoice) {
 
-    document.getElementById("computer-rock").style.backgroundColor = "";
-    document.getElementById("computer-paper").style.backgroundColor = "";
-    document.getElementById("computer-scissors").style.backgroundColor = "";
-    document.getElementById("computer-lizard").style.backgroundColor = "";
-    document.getElementById("computer-spock").style.backgroundColor = "";
+    ['rock', 'paper', 'scissors', 'lizard', 'spock'].forEach(choice => {
 
+        document.getElementById(`computer-${choice}`).style.backgroundColor = "";
 
-    if (comChoice === 'rock') {
-        document.getElementById("computer-rock").style.backgroundColor = "green";
-    } else if (comChoice === 'paper') {
-        document.getElementById("computer-paper").style.backgroundColor = "green";
-    } else if (comChoice === 'scissors') {
-        document.getElementById("computer-scissors").style.backgroundColor = "green";
-    } else if (comChoice === 'lizard') {
-        document.getElementById("computer-lizard").style.backgroundColor = "green";
-    } else if (comChoice === 'spock') {
-        document.getElementById("computer-spock").style.backgroundColor = "green";
-    }
+    });
 
-    document.getElementById("player-rock").style.backgroundColor = "";
-    document.getElementById("player-paper").style.backgroundColor = "";
-    document.getElementById("player-scissors").style.backgroundColor = "";
-    document.getElementById("player-lizard").style.backgroundColor = "";
-    document.getElementById("player-spock").style.backgroundColor = "";
-
-
-    if (playChoice === 'rock') {
-        document.getElementById("player-rock").style.backgroundColor = "green";
-    } else if (playChoice === 'paper') {
-        document.getElementById("player-paper").style.backgroundColor = "green";
-    } else if (playChoice === 'scissors') {
-        document.getElementById("player-scissors").style.backgroundColor = "green";
-    } else if (playChoice === 'lizard') {
-        document.getElementById("player-lizard").style.backgroundColor = "green";
-    } else if (playChoice === 'spock') {
-        document.getElementById("player-spock").style.backgroundColor = "green";
-    }
-}
+    document.getElementById(`computer-${comChoice}`).style.backgroundColor = "green";
 
 }
