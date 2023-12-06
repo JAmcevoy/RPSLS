@@ -75,7 +75,8 @@ function winScore() {
 
     if (oldScore === 7) {
 
-        alert("Congratulations! You have won 7 games first!");
+        // alert("Congratulations! You have won 7 games first!");
+        openPopup();
         document.getElementById("win").innerText = 0;
         document.getElementById("lose").innerText = 0;
 
@@ -94,7 +95,8 @@ function loseScore() {
 
     if (oldScore === 7) {
 
-        alert("BAZINGA! Sheldon has won 7 games first!");
+        // alert("BAZINGA! Sheldon has won 7 games first!");
+        openPopup();
         document.getElementById("win").innerText = 0;
         document.getElementById("lose").innerText = 0;
 
@@ -115,4 +117,14 @@ function changeButtonColor(comChoice) {
 
     document.getElementById(`computer-${comChoice}`).style.backgroundColor = "green";
 
+}
+
+let popup = document.getElementById("popup");
+
+function openPopup() {
+    popup.classList.add("open-popup");
+}
+
+function closePopup() {
+    popup.classList.remove(".open-popup");
 }
