@@ -16,7 +16,34 @@ My aims for this game is that it will be accessavle to mulitple ages groups with
 - I would need a section where the rule would be displayed at all times.
 - Somewhere to keep score.
 
-# Rules 
+# Planning
+
+- Before I could start this project I first need to get the planned layout, process or flow of the game, and most importantly the rules.
+
+## Planned Design.
+
+- Firstly how did I want the site to look where did I want what and placement on smaller screens so using wireframe I created my layout
+
+### Large Screen Layout.
+![Large Screen](docs/images/pcscreen_layout.JPG)
+### Types of Elements.
+![Types Layout](docs/images/layout_of_divs_and_types.JPG)
+### Small Screen Layout.
+![Small Screen](docs/images/phone_screen_planned_layout.JPG)
+
+## Game Flow and Possible Functions
+
+- Then I need d to map the flow of the game. Which involed many questions.
+- When does the game start? 
+- how does the user pick? 
+- how does the computer pick? 
+- What will add the score? 
+
+![Process Flow](docs/images/process_flow.JPG)
+
+- So I wrote out how Imagined the game running then used this as a locical wireframe of the game.
+
+## Rules 
 
 - Scissors cuts Paper
 - Paper covers Rock
@@ -28,15 +55,6 @@ My aims for this game is that it will be accessavle to mulitple ages groups with
 - Paper disproves Spock
 - Spock vaporizes Rock
 - Rock crushes Scissors
-
-# Planned Design.
-
-### Large Screen Layout.
-![Large Screen](docs/images/pcscreen_layout.JPG)
-### Types of Elements.
-![Types Layout](docs/images/layout_of_divs_and_types.JPG)
-### Small Screen Layout.
-![Small Screen](docs/images/phone_screen_planned_layout.JPG)
 
 # Features
 
@@ -131,12 +149,19 @@ The live link can be found here - <h<https://jamcevoy.github.io/R.P.S.L.S/>>
 
 ## Credits
 
+### Design
+
+- All the design screenshots  from above came from [Wirframe](https://wireframe.cc/)
+
 ### Code
 
-- 
+- How to Select a random item from an array - [Geeks For Geeks](<https://www.geeksforgeeks.org/how-to-select-a-random-element-from-array-in-javascript/>)
+- How to print value of button to input box onclick function- [Stack overflow](https://stackoverflow.com/questions/67653377/how-to-print-value-of-button-to-input-box-onclick-function)
+- Used for inspiration [Git Hub](https://github.com/TomZebra/Rock-Paper-Scissors-Spock-Lizzard/blob/main/app.js)
+- How to set a html value back to zero [Stack overflow](https://stackoverflow.com/questions/37580280/how-to-reset-a-counter-back-to-0-with-a-button-in-javascript)
+- End of game pop up [Youtube](https://youtu.be/AF6vGYIyV8M?feature=shared)
+- The Scores Section was based on the Love Maths Project [Love Maths](https://github.com/JAmcevoy/LoveMaths)
 
 ### Content
 
-- 
-
-
+- Because of the origin of this game names and catch phrases were used from the tv Show The Big Bang Theory
