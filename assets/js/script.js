@@ -50,7 +50,7 @@ function compare(playChoice, comChoice) {
         // alert(`You Win! ${playChoice} beats ${comChoice}`);
         winScore();
     } else if (playChoice === comChoice) {
-        alert("It's a Draw, Try again!");
+        // alert("It's a Draw, Try again!");
     } else {
         // alert(`You Loose! ${comChoice} beats ${playChoice}`);
         loseScore();
@@ -88,7 +88,7 @@ function loseScore() {
     document.getElementById("lose").innerText = ++oldScore;
 
     if (oldScore === 7) {
-       
+
         document.getElementById("catchphrase").innerText = "BAZINGA!";
         document.getElementById("winner").innerText =
             "Sheldon has won 7 games first!";
