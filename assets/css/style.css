@@ -21,6 +21,11 @@ body {
     margin-top: 20px;
     color: black;
     border: 40px;
+    margin: 15px;
+}
+
+#title {
+    margin-bottom: 30px;
 }
 
 
@@ -169,7 +174,6 @@ button {
     border-radius: 15%;
     padding: 15px;
     border: 10px;
-    margin-right: 30px;
 }
 
 /* media query for screens large than 768px (tablet) */
@@ -204,20 +208,21 @@ button {
     #game-section {
         padding-top: 20px;
         margin-bottom: 20px;
+        margin-top: 60px;
     }
 
     #rules {
         width: 400px;
-        height: 150px;
+        height: 250px;
+        font-size: x-large;
+        font-weight: 800;
     }
 
     #player-scores {
-        margin-right: 15px;
         font-size: large;
     }
 
     #computer-scores {
-        margin-left: 15px;
         font-size: large;
     }
 }
@@ -227,6 +232,7 @@ button {
 
     #game-section {
         padding-bottom: 10px;
+        margin-top: 60px;
     }
 
     #game-info {
@@ -243,5 +249,16 @@ button {
     #computer-scores {
         font-size: larger;
         margin: 0;
+    }
+
+    #rules {
+        font-size: x-large;
+        font-weight: 800;
+        height: 250px;
+    }
+
+    #title {
+        font-size: 57px;
+        font-style: italic;
     }
 }
