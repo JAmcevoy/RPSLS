@@ -33,11 +33,12 @@ My aims for this game is that it will be accessavle to mulitple ages groups with
 
 ## Game Flow and Possible Functions
 
-- Then I need d to map the flow of the game. Which involed many questions.
-- When does the game start? 
-- how does the user pick? 
-- how does the computer pick? 
-- What will add the score? 
+- Then I need to map the flow of the game. Which involed many questions.
+  - When does the game start?
+  - how does the user pick?
+  - how does the computer pick?
+  - What will add the score?
+  - how can I apply these parameters to functions
 
 ![Process Flow](docs/images/process_flow.JPG)
 
@@ -84,6 +85,15 @@ My aims for this game is that it will be accessavle to mulitple ages groups with
 
 ![Score and Shoot!](docs/images/score_and_play_btns.JPG)
 
+- I orginally used a switch to check the rule but it ended up being very long, messy, and repetitive.
+
+![Check Rule Switch](docs/images/switch.JPG)
+
+- So I split the check rule and made a new function compare() and a map of the values and what they beat. This allowed me to minimize the lines used and make the code more readable.
+
+![Compare](docs/images/compare.JPG)
+![Map](docs/images/map_for_compare.JPG)
+
 #### Rules 
 
 - The rules sections is a qoute taking directly from the show! By sheldon himself!
@@ -106,18 +116,17 @@ My aims for this game is that it will be accessavle to mulitple ages groups with
 
 - I tested that this page works in different browsers: Chrome, Firefox, Microsoft Edge, and Safari.
 
-![Chrome]()
+![Chrome](docs/images/chrome.JPG)
 
-![Firefox]()
+![Firefox](docs/images/firefox.JPG)
 
-![Microsoft Edge]()
+![Microsoft Edge](docs/images/edge.JPG)
 
-![Safari]()
+![Safari](docs/images/safari.jpg)
 
 - I confirmed the site was responsive using the Chrome dev tools device toolbar.
-- I can confirm that the nav and social links are reliable and easy to understand, Also the social links open in a new tab and open apps on mobile phones.
-- I have confirmed the forms work, required entries in every field, the Radio button requires at least one to be selected, only accepts an email in the email field, and the submit button works.
-- I have asked some family and friends to try the websites on a PC, laptop, and mobile phone (Andriod and iPhone).
+- I have asked some family and friends to try the game on a PC, laptop, and mobile phone (Andriod and iPhone).
+- Using console.log function and alerts I tested if the computer was outputting correct vaults.
 
 ### Validator Testing
 
