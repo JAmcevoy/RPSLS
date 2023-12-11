@@ -1,5 +1,3 @@
-let popup = document.getElementById("popup");
-
 const winConditionsMap = new Map([
     ["rock", new Set(["lizard", "scissors"])],
     ["paper", new Set(["rock", "spock"])],
@@ -7,6 +5,8 @@ const winConditionsMap = new Map([
     ["lizard", new Set(["spock", "paper"])],
     ["spock", new Set(["scissors", "rock"])],
 ]);
+
+let popup = document.getElementById("popup");
 
 /**
  * Get the users input by logging the value to a hidden field. Also, Clears the
@@ -30,6 +30,7 @@ function getComputerChoice() {
  * Gets both values when the shoot button is clicked
  */
 function checkValues() {
+
     let playChoice = document.getElementById("hidden").value;
     console.log(playChoice);
 
@@ -63,10 +64,12 @@ function compare(playChoice, comChoice) {
  * Adds catchphrase and winning messagge for player.
  */
 function winScore() {
+
     let oldScore = parseInt(document.getElementById("win").innerText);
     document.getElementById("win").innerText = ++oldScore;
 
     if (oldScore === 7) {
+
         // alert("Congratulations! You have won 7 games first!");
         document.getElementById("catchphrase").innerText = "Congratulations!";
         document.getElementById("winner").innerText =
@@ -75,7 +78,9 @@ function winScore() {
         openPopup();
         document.getElementById("win").innerText = 0;
         document.getElementById("lose").innerText = 0;
+
     }
+
 }
 
 /**
@@ -84,6 +89,7 @@ function winScore() {
  * Adds catchphrase and loosing messagge for player.
  */
 function loseScore() {
+
     let oldScore = parseInt(document.getElementById("lose").innerText);
     document.getElementById("lose").innerText = ++oldScore;
 
@@ -116,6 +122,7 @@ function changeButtonColor(comChoice) {
  * opens popup with result of the game.
  */
 function openPopup() {
+
     popup.classList.add("open-popup");
 }
 
@@ -123,5 +130,6 @@ function openPopup() {
  * closes the popup when button is clicked.
  */
 function closePopup() {
+
     popup.classList.remove("open-popup");
 }
