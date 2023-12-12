@@ -185,6 +185,7 @@ The live link can be found here - <h<https://jamcevoy.github.io/R.P.S.L.S/>>
 - How to set an HTML value back to zero [Stack overflow](https://stackoverflow.com/questions/37580280/how-to-reset-a-counter-back-to-0-with-a-button-in-javascript)
 - End of the game pop up [Youtube](https://youtu.be/AF6vGYIyV8M?feature=shared)
 - The Scores Section was based on the Love Maths Project [Love Maths](https://github.com/JAmcevoy/LoveMaths)
+- For each statement for the background color of the comChoice [Free Code Camp](https://www.freecodecamp.org/news/javascript-foreach-how-to-loop-through-an-array-in-js/#:~:text=The%20forEach%20method%20passes%20a,The%20current%20element's%20index%20number)
 
 ### Content
 

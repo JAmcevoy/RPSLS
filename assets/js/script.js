@@ -53,13 +53,13 @@ function compare(playChoice, comChoice) {
     const winningMoves = winConditionsMap.get(playChoice);
 
     if (winningMoves && winningMoves.has(comChoice)) {
-        // alert(`You Win! ${playChoice} beats ${comChoice}`);
+
         winScore();
-    } else if (playChoice === comChoice) {
-        // alert("It's a Draw, Try again!");
+
     } else {
-        // alert(`You Loose! ${comChoice} beats ${playChoice}`);
+
         loseScore();
+
     }
 }
 
@@ -75,7 +75,6 @@ function winScore() {
 
     if (oldScore === 7) {
 
-        // alert("Congratulations! You have won 7 games first!");
         document.getElementById("catchphrase").innerText = "Congratulations!";
         document.getElementById("winner").innerText =
             "You were the first to reach 7!";
