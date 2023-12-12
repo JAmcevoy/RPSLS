@@ -1,3 +1,5 @@
+/* jshint esversion: 6 */
+
 const winConditionsMap = new Map([
     ["rock", new Set(["lizard", "scissors"])],
     ["paper", new Set(["rock", "spock"])],
@@ -6,13 +8,14 @@ const winConditionsMap = new Map([
     ["spock", new Set(["scissors", "rock"])],
 ]);
 
-let popup = document.getElementById("popup");
+const popup = document.getElementById("popup");
 
 /**
  * Get the users input by logging the value to a hidden field. Also, Clears the
  * field of any buttons already pressed.
  */
 function getPlayerChoice(value) {
+
     document.getElementById("hidden").value = "";
     document.getElementById("hidden").value = value;
 }
@@ -21,8 +24,9 @@ function getPlayerChoice(value) {
  * Picks a number by between 1-5 then pulls a value from the array matching that number
  */
 function getComputerChoice() {
-    let choices = ["rock", "paper", "scissors", "lizard", "spock"];
-    let randomNumber = Math.floor(Math.random() * 5);
+
+    const choices = ["rock", "paper", "scissors", "lizard", "spock"];
+    const randomNumber = Math.floor(Math.random() * 5);
     return choices[randomNumber];
 }
 
@@ -31,10 +35,10 @@ function getComputerChoice() {
  */
 function checkValues() {
 
-    let playChoice = document.getElementById("hidden").value;
+    const playChoice = document.getElementById("hidden").value;
     console.log(playChoice);
 
-    let comChoice = getComputerChoice();
+    const comChoice = getComputerChoice();
     changeButtonColor(comChoice);
     console.log(comChoice);
 
@@ -45,7 +49,8 @@ function checkValues() {
  * Compares the Player and Computer Values.
  */
 function compare(playChoice, comChoice) {
-    let winningMoves = winConditionsMap.get(playChoice);
+
+    const winningMoves = winConditionsMap.get(playChoice);
 
     if (winningMoves && winningMoves.has(comChoice)) {
         // alert(`You Win! ${playChoice} beats ${comChoice}`);
@@ -109,6 +114,7 @@ function loseScore() {
  * Changes the computers button color based on which value the computer picks.
  */
 function changeButtonColor(comChoice) {
+
     ["rock", "paper", "scissors", "lizard", "spock"].forEach((choice) => {
         document.getElementById(`computer-${choice}`).style.backgroundColor = "";
     });
