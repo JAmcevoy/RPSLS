@@ -146,10 +146,10 @@ My aim for this game is that it will be accessible to multiple age groups with a
 - CSS
   - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator)
     ![css vidator](docs/images/css_val.JPG)
-<!-- - JavaScript 
+- JavaScript 
   - no errors were found.
-    [JavaScript validator]()
-    ![[JavaScript validator]() -->
+    [JS Hint](https://jshint.com/)
+    ![[JS validator](docs/images/js_val.JPG)
 
 ### Bugs I Faced Along The Way
 
