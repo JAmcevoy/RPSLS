@@ -169,6 +169,106 @@ My aim for this game is that it will be accessible to multiple age groups with a
 - I have asked some family and friends to try the game on a PC, laptop, and mobile phone (Andriod and iPhone).
 - Using the console.log function and alerts I tested if the computer was outputting correct vaults on the devtools console.
 
+### Choices test
+
+#### Aim - To test that the computer is selecting different options and using each value of the users options for one full game (up to 7 wins):
+
+### Testing: 
+
+#### Rock
+
+    - Paper
+    - Paper
+    - Paper
+    - Lizard
+    - Paper
+    - Lizard
+    - Paper
+    - Paper
+    - Lizard
+    - Scissors
+    - Rock
+    - Paper.
+  #### Paper
+    - Spock
+    - scissors
+    - paper
+    - paper
+    - lizard
+    - spock
+    - rock
+    - spock
+    - paper
+    - spock
+    - lizard
+    - Scissors
+    - lizrad
+    - paper
+    - scissors
+    - spock
+    - spock
+  #### scissors
+    - Lizard
+    - scissors
+    - rock
+    - spock
+    - spock
+    - lizard
+    - lizard
+    - rock
+    - scissors
+    - scissors
+    - scissors
+    - rock
+    - scissors
+    - paper
+    - paper
+    - rock
+  #### Lizard
+    - spock
+    - scissors
+    - rock
+    - scissors
+    - spock
+    - Scissors
+    - spock
+    - paper
+    - spock
+    - paper
+    - scissors
+    - paper
+ #### Spock
+    - spock 
+    - rock
+    - scissors
+    - lizard
+    - lizard 
+    - paper
+    - spock
+    - paper 
+    - paper
+    - rock
+    - rock
+    - paper 
+    - spock
+    - paper
+
+### Conclusion
+
+  - Between the fives tests I couldnt see any specific patterns, Between each run of game. This leads me to believe the random numbers are being generated successfully.
+
+### User testing
+
+- In this user test I though it best have the user be in two sepperate age groups to refer back to 'My aim for this game is that it will be accessible to multiple age groups' 
+
+- **User 1** - I asked my grandmother, 67 years old to try the game, At first she found it hard to understand what to do. Even after explaining.
+  - **User Comments** - She said "There isnt enough happening on screen to show me what I am suppose to do"
+    - **Notes** - Maybe adding some color to the screen like for computer choices of the user choice to let the user know where they need to make their choice.
+  
+- **User 2** - I let my cousin Aisha, 8 years old to try play the game.
+  - **User Comments** - She said "Its a fun game but very annoying when I press the shoot button the screen is blocked by an alert.".
+    - **Notes** - Maybe some sort of stylish type of popup can display to show alerts of end of game or draw.
+
 ### Validator Testing
 
 - HTML
