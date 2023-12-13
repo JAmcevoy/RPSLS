@@ -36,11 +36,21 @@ function getComputerChoice() {
  */
 function checkValues() {
 
-    draw.classList.remove("open-draw");
     const playChoice = document.getElementById("hidden").value;
     const comChoice = getComputerChoice();
-    changeButtonColor(comChoice);
-    compare(playChoice, comChoice);
+
+    if (playChoice === "") {
+
+        confirm("Have you made a Choice?");
+
+        throw ("No User Choice");
+
+
+    } else {
+        draw.classList.remove("open-draw");
+        changeButtonColor(comChoice);
+        compare(playChoice, comChoice);
+    }
 }
 
 /**
