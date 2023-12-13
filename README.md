@@ -48,6 +48,9 @@ My aim for this game is that it will be accessible to multiple age groups with a
 ![Process Flow](docs/images/process_flow.JPG)
 
 - So I wrote out how Imagined the game running and then used this as a logical wireframe of the game.
+- I also thought that creating a flow chart would better structure my idea 
+
+![Process Flow](docs/images/planned_flow.JPG)
 
 ## Rules
 
@@ -176,6 +179,7 @@ The live link can be found here - <h<https://jamcevoy.github.io/R.P.S.L.S/>>
 ### Design
 
 - All the design screenshots  from above came from [Wirframe](https://wireframe.cc/)
+- The flowchart created for the planning section was created with [Smart Draw](https://app.smartdraw.com/editor.aspx?templateId=da34e096-b9cb-4d56-a0ce-d9bdef138714&flags=128#depoId=52632460&credID=-57250829)
 
 ### Code
 
