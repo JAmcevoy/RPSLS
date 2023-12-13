@@ -157,6 +157,7 @@ My aim for this game is that it will be accessible to multiple age groups with a
 
 - I didn't face many bugs in the creation of this game, One issue I did have was changing the background color on the button selected by the user and the pc. I tried to use one function for each side but this prevented the game from running when I hit submit so instead, I used JavaScript for the computer choice using the changeButtonColor() and used css pseudo-class for the player choice.
 - Using the alerts to display the end game-winner made for a bad user experience, So I decided to use a popup instead. I was not sure how I could do this so I researched possible solutions online and found a tutorial online on how to create one I changed the style a bit and added my own text and using spans I displayed the winner's catchphrase and a little text displaying *name* has won 7 games first!.
+- I faced a bug with codeanywhere, when I was making some minor changes to the readme, I ran a commit but nothing pushed through so I checked back and the file was unsaved. I saved the file and ran the commit again with the same message and this pushed it through and cause two commit to be pushed over to git with the same commit message. I noticed this save issue a few time throughout the creatation of this project but was not a major problem.
 
 ### Bugs I did not get to fix
 
