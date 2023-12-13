@@ -1,5 +1,4 @@
 /* jshint esversion: 6 */
-document.addEventListener("DOMContentLoaded", function ());
 
 const winConditionsMap = new Map([
     ["rock", new Set(["lizard", "scissors"])],

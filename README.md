@@ -10,10 +10,10 @@ My aim for this game is that it will be accessible to multiple age groups with a
 
 # User Needs
 
-- I would want the game to be accessible from different devices (Phone, Laptop, PC, Tablet).
-- It would need to be responsive to all screens, ensuring the information is readable and understandable.
+- As a user I would want the game to be accessible from different devices (Phone, Laptop, PC, Tablet).
+- As a user I would like it to be responsive to all screens, ensuring the information is readable and understandable.
 - As a user, I would want to see easy-to-understand control, with good use of white space.
-- I would need a section where the rule would be displayed at all times.
+- As a user I would need a section where the rule would be displayed at all times.
 - Somewhere to keep score.
 
 # Planning
@@ -43,7 +43,7 @@ My aim for this game is that it will be accessible to multiple age groups with a
   - how does the user pick?
   - how does the computer pick?
   - What will add to the score?
-  - how can I apply these parameters to functions
+  - how can I apply these parameters to functions?
 
 ![Process Flow](docs/images/process_flow.JPG)
 
@@ -166,14 +166,51 @@ My aim for this game is that it will be accessible to multiple age groups with a
 
 ## Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub)
+This section describes how to create a new repository.
+
+- This repository was created using [GitHub](<https://github.com/>) The steps are as followed:
+  - I went to the [Code Institute Template](https://github.com/Code-Institute-Org/ci-full-template)
+  - I selected the green button labelled 'Use this template'
+  - Then, Create new repository.
+  - Then I was brought to a new page to set the name and setting  for my new repository.
+  - I named my repository 'R.P.S.L.S'
+
+This section describes how I set up my workspace, Once my repository has been created.
+
+- The workspace I used for this project was [codeanywhere](https://app.codeanywhere.com/). The steps are as followed:
+  - I opened [GitHub](<https://github.com/>) and went to the 'R.P.S.L.S' repository
+  - To get the link for codeanywhere I clicked the green button '<>code'. 
+  - Here under local I could copy the link needed: <https://github.com/JAmcevoy/R.P.S.L.S.git>
+  - Then I went to codeanywhere.
+  - In workplaces, I selected new workspaces
+  - Here I copied the link from git hub and clicked to create to make my workspace.
+
+This section describes the commands I used in code anywhere to push my code and changes to GitHub.
+
+    -  I created the files and folders needed for my project.
+      - index.html
+      - assest folder
+        - css folder
+          - style.css
+        - icon folder
+        - js folder
+          - script.js
+        - images
+      - Docs
+        - images
+    - I used the git add . command to add all changes above.
+    - Using the git commit command I committed the change and used -m to attach a message to the commit.
+    - When I was finished with the creatation I used git push to push all this files and folder to GitHub.
+    - I used these same 3 command through thecreation and modification
+
+This section should describe the process I went through to deploy the project to a hosting platform.
 
 - The site was deployed to GitHub pages. The steps to deploy are as follows:
   - In the GitHub repository, navigate to the Settings tab
   - From the source section drop-down menu, select the Master Branch
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-The live link can be found here - <h<https://jamcevoy.github.io/R.P.S.L.S/>>
+The live link can be found here - <https://jamcevoy.github.io/R.P.S.L.S/>
 
 ## Credits
 
