@@ -42,11 +42,9 @@ function checkValues() {
     if (playChoice === "") {
 
         confirm("Have you made a Choice?");
-
         throw ("No User Choice");
-
-
-    } else {
+    }
+    else {
         draw.classList.remove("open-draw");
         changeButtonColor(comChoice);
         compare(playChoice, comChoice);
