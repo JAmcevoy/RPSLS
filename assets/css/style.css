@@ -100,6 +100,18 @@ button {
     margin-left: 5px;
 }
 
+#draw {
+    margin-bottom: 0;
+    padding: 20px;
+    font-size: 50px;
+    color: rgb(244, 6, 6);
+    visibility: hidden;
+}
+
+.open-draw {
+    visibility: visible;
+}
+
 
 #win {
     color: green;
@@ -223,6 +235,10 @@ button {
     #rules {
         height: 200px;
         width: 500px;
+    }
+
+    #draw {
+        margin-top: 20px
     }
 }
 
