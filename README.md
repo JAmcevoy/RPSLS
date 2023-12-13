@@ -10,10 +10,10 @@ My aim for this game is that it will be accessible to multiple age groups with a
 
 # User Needs
 
-- As a user I would want the game to be accessible from different devices (Phone, Laptop, PC, Tablet).
+- As a user, I would want the game to be accessible from different devices (Phone, Laptop, PC, Tablet).
 - As a user I would like it to be responsive to all screens, ensuring the information is readable and understandable.
 - As a user, I would want to see easy-to-understand control, with good use of white space.
-- As a user I would need a section where the rule would be displayed at all times.
+- As a user, I would need a section where the rule would be displayed at all times.
 - Somewhere to keep score.
 
 # Planning
@@ -48,7 +48,7 @@ My aim for this game is that it will be accessible to multiple age groups with a
 ![Process Flow](docs/images/process_flow.JPG)
 
 - So I wrote out how Imagined the game running and then used this as a logical wireframe of the game.
-- I also thought that creating a flow chart would better structure my idea 
+- I also thought that creating a flow chart would better structure my idea
 
 ![Process Flow](docs/images/planned_flow.JPG)
 
@@ -84,12 +84,12 @@ My aim for this game is that it will be accessible to multiple age groups with a
 #### Computer Choices
 
 - The computer choices are buttons like the user, However, they do not have any function when clicked.
-- I kept the user choices to red background color to stay with the theme of the big bang theory, Sheldon flash t-shirt.
+- I kept the user choices to red background color to stay with the theme of the Big Bang theory, Sheldon flash t-shirt.
 - Once the random number is generated in the background it will change the background color to green as it does with the user choices. They reset each turn using a function.
 
 ![Computer Choices](docs/images/computer.JPG)
 
-- The random number generated in the background is also the computers choice. This pull an option from a defined array
+- The random number generated in the background is also the computer's choice. This pulls an option from a defined array
 
 ![Computer Choice Funtion](docs/images/comChoice.JPG)
 
@@ -119,15 +119,15 @@ My aim for this game is that it will be accessible to multiple age groups with a
 
 ### Draw Heading
 
-- In the event of a draw I created a little red heading to display this to the user. 
+- In the event of a draw I created a little red heading to display this to the user.
 
 ![Draw Heading](docs/images/draw.JPG)
 
-- Using the the add class function I can hide and display this heading based on if the options are equal (show) or not (hide)
+- Using the the add class function I can hide and display this heading based on whether the options are equal (show) or not (hide)
 
 ![Draw open code](docs/images/draw_1.JPG)
 
-- The hide functionality is in the check rules function so each round this heading will be hidden so to stop it appearing again after a draw has already been thrown.
+- The hide functionality is in the check rules function so each round this heading will be hidden to stop it from appearing again after a draw has already been thrown.
 
 ![Draw Hide](docs/images/draw_2.JPG)
 
@@ -139,10 +139,10 @@ My aim for this game is that it will be accessible to multiple age groups with a
 
 ![Game Over](docs/images/game_over.JPG)
 
-- The open popup is called in the function for win score and for lose score
-- I used the classList.add to add he class name and display the popup.
+- The open popup is called in the function for the win score and for loss score
+- I used the classList.add to add the class name and display the popup.
 - The Close button on the popup calls a close popup Function using onclick so we can close the pop-up and try again.
-- I used the classList.remove to remove he class name and display the popup.
+- I used the classList.remove to remove the class name and display the popup.
 
 ![Open and Close Popup Function](docs/images/open_and_close.JPG)
 
@@ -153,7 +153,7 @@ My aim for this game is that it will be accessible to multiple age groups with a
 - I wanted to add a popup that displays each win based on the values, for example, paper covers rock. However, using alerts didn't seem too convenient for the user.
 - I think some audio would make the game more interactive, if Sheldon wins maybe play an audio clip of his famous catchphrase.
 
-## Testing
+# Testing
 
 - I tested that this page works in different browsers: Chrome, Firefox, Microsoft Edge, and Safari.
 
@@ -171,9 +171,9 @@ My aim for this game is that it will be accessible to multiple age groups with a
 
 ### Choices test
 
-#### Aim - To test that the computer is selecting different options and using each value of the users options for one full game (up to 7 wins):
+#### Aim - To test that the computer is selecting different options and using each value of the user's options for one full game (up to 7 wins)
 
-### Test Result: 
+### Testing
 
 #### Rock
 
@@ -189,30 +189,34 @@ My aim for this game is that it will be accessible to multiple age groups with a
     - Scissors
     - Rock
     - Paper.
-  #### Paper
+
+#### Paper
+
     - Spock
     - scissors
     - paper
     - paper
     - lizard
-    - spock
+    - Spock
     - rock
-    - spock
+    - Spock
     - paper
-    - spock
+    - Spock
     - lizard
     - Scissors
-    - lizrad
+    - lizard
     - paper
     - scissors
-    - spock
-    - spock
-  #### scissors
+    - Spock
+    - Spock
+
+#### scissors
+
     - Lizard
     - scissors
     - rock
-    - spock
-    - spock
+    - Spock
+    - Spock
     - lizard
     - lizard
     - rock
@@ -224,50 +228,54 @@ My aim for this game is that it will be accessible to multiple age groups with a
     - paper
     - paper
     - rock
-  #### Lizard
-    - spock
+
+#### Lizard
+
+    - Spock
     - scissors
     - rock
     - scissors
-    - spock
+    - Spock
     - Scissors
-    - spock
+    - Spock
     - paper
-    - spock
+    - Spock
     - paper
     - scissors
     - paper
- #### Spock
-    - spock 
+
+#### Spock
+
+    - Spock 
     - rock
     - scissors
     - lizard
     - lizard 
     - paper
-    - spock
+    - Spock
     - paper 
     - paper
     - rock
     - rock
     - paper 
-    - spock
+    - Spock
     - paper
 
-#### Conclusion
+### Conclusion
 
-  - Between the fives tests I couldnt see any specific patterns, Between each run of game. This leads me to believe the random numbers are being generated successfully.
+- Between the five tests I couldn't see any specific patterns, Between each run of the game. This leads me to believe the random numbers are being generated successfully.
 
 ### User testing
 
-- In this user test I though it best have the user be in two sepperate age groups to refer back to 'My aim for this game is that it will be accessible to multiple age groups' 
+- In this user test I thought it best to have the user be in two separate age groups to refer back to 'My aim for this game is that it will be accessible to multiple age groups'
 
 - **User 1** - I asked my grandmother, 67 years old to try the game, At first she found it hard to understand what to do. Even after explaining.
-  - **User Comments** - She said "There isnt enough happening on screen to show me what I am suppose to do"
+  - **User Comments** - She said "There isn't enough happening on screen to show me what I am supposed to do"
     - **Notes** - Maybe adding some color to the screen like for computer choices of the user choice to let the user know where they need to make their choice.
   
 - **User 2** - I let my cousin Aisha, 8 years old to try play the game.
-  - **User Comments** - She said "Its a fun game but very annoying when I press the shoot button the screen is blocked by an alert.".
-    - **Notes** - Maybe some sort of stylish type of popup can display to show alerts of end of game or draw.
+  - **User Comments** - She said "It's a fun game but very annoying when I press the shoot button the screen is blocked by an alert.".
+    - **Notes** - Maybe some sort of stylish type of popup can display alerts of the end of the game or draw.
 
 ### Validator Testing
 
@@ -277,15 +285,15 @@ My aim for this game is that it will be accessible to multiple age groups with a
 - CSS
   - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator)
     ![css vidator](docs/images/css_val.JPG)
-- JavaScript 
+- JavaScript
   - no errors were found [JS Hint](https://jshint.com/)
   ![JS validator](docs/images/js_val.JPG)
 
 ### Bugs I Faced Along The Way
 
-- I didn't face many bugs in the creation of this game, One issue I did have was changing the background color on the button selected by the user and the pc. I tried to use one function for each side but this prevented the game from running when I hit submit so instead, I used JavaScript for the computer choice using the changeButtonColor() and used css pseudo-class for the player choice.
-- Using the alerts to display the end game-winner made for a bad user experience, So I decided to use a popup instead. I was not sure how I could do this so I researched possible solutions online and found a tutorial online on how to create one I changed the style a bit and added my own text and using spans I displayed the winner's catchphrase and a little text displaying *name* has won 7 games first!.
-- I faced a bug with codeanywhere, when I was making some minor changes to the readme, I ran a commit but nothing pushed through so I checked back and the file was unsaved. I saved the file and ran the commit again with the same message and this pushed it through and cause two commit to be pushed over to git with the same commit message. I noticed this save issue a few time throughout the creatation of this project but was not a major problem.
+- I didn't face many bugs in the creation of this game, One issue I did have was changing the background color on the button selected by the user and the pc. I tried to use one function for each side but this prevented the game from running when I hit submit so instead, I used JavaScript for the computer choice using the changeButtonColor() and used CSS pseudo-class for the player choice.
+- Using the alerts to display the end game-winner made for a bad user experience, So I decided to use a popup instead. I was not sure how I could do this so I researched possible solutions online and found a tutorial online on how to create one I changed the style a bit and added my text and using spans I displayed the winner's catchphrase and a little text displaying *name* has won 7 games first!.
+- I faced a bug with code anywhere when I was making some minor changes to the readme, I ran a commit but nothing pushed through so I checked back and the file was unsaved. I saved the file and ran the commit again with the same message and this pushed it through and caused two commits to be pushed over to git with the same commit message. I noticed this save issue a few times throughout the creation of this project but was not a major problem.
 
 ### Bugs I did not get to fix
 
@@ -298,26 +306,26 @@ This section describes how to create a new repository.
 
 - This repository was created using [GitHub](<https://github.com/>) The steps are as followed:
   - I went to the [Code Institute Template](https://github.com/Code-Institute-Org/ci-full-template)
-  - I selected the green button labelled 'Use this template'
-  - Then, Create new repository.
+  - I selected the green button labeled 'Use this template'
+  - Then, Create a new repository.
   - Then I was brought to a new page to set the name and setting  for my new repository.
   - I named my repository 'R.P.S.L.S'
 
 This section describes how I set up my workspace, Once my repository has been created.
 
-- The workspace I used for this project was [codeanywhere](https://app.codeanywhere.com/). The steps are as followed:
+- The workspace I used for this project was [codeanywhere](https://app.codeanywhere.com/). The steps are as follows:
   - I opened [GitHub](<https://github.com/>) and went to the 'R.P.S.L.S' repository
-  - To get the link for codeanywhere I clicked the green button '<>code'. 
-  - Here under local I could copy the link needed: <https://github.com/JAmcevoy/R.P.S.L.S.git>
-  - Then I went to codeanywhere.
+  - To get the link for codeanywhere I clicked the green button '<>code'.
+  - Here under local, I could copy the link needed: <https://github.com/JAmcevoy/R.P.S.L.S.git>
+  - Then I went to code anywhere.
   - In workplaces, I selected new workspaces
-  - Here I copied the link from git hub and clicked to create to make my workspace.
+  - Here I copied the link from the git hub and clicked to create to make my workspace.
 
 This section describes the commands I used in code anywhere to push my code and changes to GitHub.
 
     -  I created the files and folders needed for my project.
       - index.html
-      - assest folder
+      - assets folder
         - css folder
           - style.css
         - icon folder
@@ -328,8 +336,8 @@ This section describes the commands I used in code anywhere to push my code and 
         - images
     - I used the git add . command to add all changes above.
     - Using the git commit command I committed the change and used -m to attach a message to the commit.
-    - When I was finished with the creatation I used git push to push all this files and folder to GitHub.
-    - I used these same 3 command through thecreation and modification
+    - When I was finished with the creation I used git push to push all these files and folders to GitHub.
+    - I used these same 3 commands through the creation and modification
 
 This section should describe the process I went through to deploy the project to a hosting platform.
 
