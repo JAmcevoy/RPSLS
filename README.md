@@ -173,7 +173,7 @@ My aim for this game is that it will be accessible to multiple age groups with a
 
 #### Aim - To test that the computer is selecting different options and using each value of the users options for one full game (up to 7 wins):
 
-### Testing: 
+### Test Result: 
 
 #### Rock
 
@@ -253,7 +253,7 @@ My aim for this game is that it will be accessible to multiple age groups with a
     - spock
     - paper
 
-### Conclusion
+#### Conclusion
 
   - Between the fives tests I couldnt see any specific patterns, Between each run of game. This leads me to believe the random numbers are being generated successfully.
 
