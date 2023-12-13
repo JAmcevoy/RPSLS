@@ -100,7 +100,7 @@ button {
     margin-left: 5px;
 }
 
-#draw {
+.draw {
     margin-bottom: 0;
     padding: 20px;
     font-size: 50px;

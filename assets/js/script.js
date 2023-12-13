@@ -9,6 +9,7 @@ const winConditionsMap = new Map([
 ]);
 
 const popup = document.getElementById("popup");
+const draw = document.getElementById("draw");
 
 /**
  * Get the users input by logging the value to a hidden field. Also, Clears the
@@ -35,13 +36,10 @@ function getComputerChoice() {
  */
 function checkValues() {
 
+    draw.classList.remove("open-draw");
     const playChoice = document.getElementById("hidden").value;
-    console.log(playChoice);
-
     const comChoice = getComputerChoice();
     changeButtonColor(comChoice);
-    console.log(comChoice);
-
     compare(playChoice, comChoice);
 }
 
@@ -52,14 +50,17 @@ function compare(playChoice, comChoice) {
 
     const winningMoves = winConditionsMap.get(playChoice);
 
-    if (winningMoves && winningMoves.has(comChoice)) {
+    if (playChoice === comChoice) {
+
+        drawScore();
+    }
+    else if (winningMoves && winningMoves.has(comChoice)) {
 
         winScore();
-
-    } else {
+    }
+    else {
 
         loseScore();
-
     }
 }
 
@@ -107,6 +108,10 @@ function loseScore() {
         document.getElementById("win").innerText = 0;
         document.getElementById("lose").innerText = 0;
     }
+}
+
+function drawScore() {
+    draw.classList.add("open-draw");
 }
 
 /**
