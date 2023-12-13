@@ -83,9 +83,7 @@ function winScore() {
         openPopup();
         document.getElementById("win").innerText = 0;
         document.getElementById("lose").innerText = 0;
-
     }
-
 }
 
 /**
@@ -110,7 +108,9 @@ function loseScore() {
     }
 }
 
+/**Displays the draw heading it choices match*/
 function drawScore() {
+
     draw.classList.add("open-draw");
 }
 
