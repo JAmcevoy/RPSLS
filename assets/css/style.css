@@ -219,6 +219,11 @@ button {
     #computer-scores {
         font-size: large;
     }
+
+    #rules {
+        height: 200px;
+        width: 500px;
+    }
 }
 
 /* media query for screens large than 900px (laptops, pcs ect) */
@@ -248,7 +253,8 @@ button {
     #rules {
         font-size: x-large;
         font-weight: 800;
-        height: 250px;
+        height: 300px;
+        width: 400px;
     }
 
     #title {
