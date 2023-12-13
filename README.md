@@ -73,6 +73,10 @@ My aim for this game is that it will be accessible to multiple age groups with a
 
 - The user's buttons are where the player can select which option they choose. This then copies the value to a hidden field to be used in the game.
 - Each click resets the hidden field to blank to stop any mistakes.
+- I accomplished this using innerHTML.
+
+![Player Hidden Field](docs/images/playChoice.JPG)
+
 - The button stays green once clicked to let the user know the option which will be played.
 
 ![Player Choices](docs/images/user.JPG)
@@ -84,6 +88,10 @@ My aim for this game is that it will be accessible to multiple age groups with a
 - Once the random number is generated in the background it will change the background color to green as it does with the user choices. They reset each turn using a function.
 
 ![Computer Choices](docs/images/computer.JPG)
+
+- The random number generated in the background is also the computers choice. This pull an option from a defined array
+
+![Computer Choice Funtion](docs/images/comChoice.JPG)
 
 #### Score and Shoot
 
@@ -109,14 +117,34 @@ My aim for this game is that it will be accessible to multiple age groups with a
 
 ![Rules](docs/images/rules.JPG)
 
+### Draw Heading
+
+- In the event of a draw I created a little red heading to display this to the user. 
+
+![Draw Heading](docs/images/draw.JPG)
+
+- Using the the add class function I can hide and display this heading based on if the options are equal (show) or not (hide)
+
+![Draw open code](docs/images/draw_1.JPG)
+
+- The hide functionality is in the check rules function so each round this heading will be hidden so to stop it appearing again after a draw has already been thrown.
+
+![Draw Hide](docs/images/draw_2.JPG)
+
 #### Game Over
 
 - Once a player or Computer wins 7 games it calls a function openPopup which displays the box below the text differently based on whether the player won or the user won.
 - When the computer wins you will see another nod to the Big Bang theory being that Sheldon's catchphrase is displayed.
 - If the user wins you get a simple congratulations!
-- The Close button on the popup calls a close popup Function so we can close the pop-up and try again.
 
 ![Game Over](docs/images/game_over.JPG)
+
+- The open popup is called in the function for win score and for lose score
+- I used the classList.add to add he class name and display the popup.
+- The Close button on the popup calls a close popup Function using onclick so we can close the pop-up and try again.
+- I used the classList.remove to remove he class name and display the popup.
+
+![Open and Close Popup Function](docs/images/open_and_close.JPG)
 
 ### Features Left to Implement
 
