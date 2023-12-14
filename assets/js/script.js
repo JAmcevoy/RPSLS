@@ -67,6 +67,7 @@ function compare(playChoice, comChoice) {
  * Adds catchphrase and winning message for player.
  */
 function winScore() {
+    // Love Maths
     let oldScore = parseInt(document.getElementById("win").innerText);
     document.getElementById("win").innerText = ++oldScore;
 
@@ -87,6 +88,7 @@ function winScore() {
  * Adds catchphrase and losing message for player.
  */
 function loseScore() {
+    // Love Math
     let oldScore = parseInt(document.getElementById("lose").innerText);
     document.getElementById("lose").innerText = ++oldScore;
 
@@ -122,6 +124,7 @@ function changeButtonColor(comChoice) {
 /** opens a popup with the result of the game.
  */
 function winPopup() {
+    // YouTube Tutorial
     popup.classList.add("open-popup");
 }
 
@@ -129,5 +132,6 @@ function winPopup() {
  * closes the popup when the button is clicked.
  */
 function closePopup() {
+    // YouTube Tutorial
     popup.classList.remove("open-popup");
 }
