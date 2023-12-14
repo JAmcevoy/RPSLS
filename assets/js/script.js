@@ -16,7 +16,6 @@ const draw = document.getElementById("draw");
  * field of any buttons already pressed.
  */
 function getPlayerChoice(value) {
-
     document.getElementById("hidden").value = "";
     document.getElementById("hidden").value = value;
 }
@@ -25,7 +24,6 @@ function getPlayerChoice(value) {
  * Picks a number by between 1-5 then pulls a value from the array matching that number
  */
 function getComputerChoice() {
-
     const choices = ["rock", "paper", "scissors", "lizard", "spock"];
     const randomNumber = Math.floor(Math.random() * 5);
     return choices[randomNumber];
@@ -35,16 +33,13 @@ function getComputerChoice() {
  * Gets both values when the shoot button is clicked
  */
 function checkValues() {
-
     const playChoice = document.getElementById("hidden").value;
     const comChoice = getComputerChoice();
 
     if (playChoice === "") {
-
         confirm("Have you made a Choice?");
-        throw ("No User Choice");
-    }
-    else {
+        throw "No User Choice has been selected";
+    } else {
         draw.classList.remove("open-draw");
         changeButtonColor(comChoice);
         compare(playChoice, comChoice);
@@ -55,19 +50,13 @@ function checkValues() {
  * Compares the Player and Computer Values.
  */
 function compare(playChoice, comChoice) {
-
     const winningMoves = winConditionsMap.get(playChoice);
 
     if (playChoice === comChoice) {
-
         drawScore();
-    }
-    else if (winningMoves && winningMoves.has(comChoice)) {
-
+    } else if (winningMoves && winningMoves.has(comChoice)) {
         winScore();
-    }
-    else {
-
+    } else {
         loseScore();
     }
 }
@@ -78,17 +67,15 @@ function compare(playChoice, comChoice) {
  * Adds catchphrase and winning messagge for player.
  */
 function winScore() {
-
     let oldScore = parseInt(document.getElementById("win").innerText);
     document.getElementById("win").innerText = ++oldScore;
 
     if (oldScore === 7) {
-
         document.getElementById("catchphrase").innerText = "Congratulations!";
         document.getElementById("winner").innerText =
             "You were the first to reach 7!";
 
-        openPopup();
+        winPopup();
         document.getElementById("win").innerText = 0;
         document.getElementById("lose").innerText = 0;
     }
@@ -100,25 +87,23 @@ function winScore() {
  * Adds catchphrase and loosing messagge for player.
  */
 function loseScore() {
-
     let oldScore = parseInt(document.getElementById("lose").innerText);
     document.getElementById("lose").innerText = ++oldScore;
 
     if (oldScore === 7) {
-
         document.getElementById("catchphrase").innerText = "BAZINGA!";
         document.getElementById("winner").innerText =
             "Sheldon has won 7 games first!";
 
-        openPopup();
+        winPopup();
         document.getElementById("win").innerText = 0;
         document.getElementById("lose").innerText = 0;
     }
 }
 
-/**Displays the draw heading it choices match*/
+/**
+ * Displays the draw heading it choices match*/
 function drawScore() {
-
     draw.classList.add("open-draw");
 }
 
@@ -126,7 +111,6 @@ function drawScore() {
  * Changes the computers button color based on which value the computer picks.
  */
 function changeButtonColor(comChoice) {
-
     ["rock", "paper", "scissors", "lizard", "spock"].forEach((choice) => {
         document.getElementById(`computer-${choice}`).style.backgroundColor = "";
     });
@@ -135,12 +119,10 @@ function changeButtonColor(comChoice) {
         "green";
 }
 
-
 /**
  * opens popup with result of the game.
  */
-function openPopup() {
-
+function winPopup() {
     popup.classList.add("open-popup");
 }
 
@@ -148,6 +130,5 @@ function openPopup() {
  * closes the popup when button is clicked.
  */
 function closePopup() {
-
     popup.classList.remove("open-popup");
 }

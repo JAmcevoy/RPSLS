@@ -75,7 +75,7 @@ My aim for this game is that it will be accessible to multiple age groups with a
 - Each click resets the hidden field to blank to stop any mistakes.
 - I accomplished this using innerHTML.
 
-![Player Hidden Field](docs/images/playChoice.JPG)
+![Player Hidden Field](docs/images/playchoice.JPG)
 
 - The button stays green once clicked to let the user know the option which will be played.
 
@@ -91,7 +91,7 @@ My aim for this game is that it will be accessible to multiple age groups with a
 
 - The random number generated in the background is also the computer's choice. This pulls an option from a defined array
 
-![Computer Choice Funtion](docs/images/comChoice.JPG)
+![Computer Choice Funtion](docs/images/comchoice.JPG)
 
 #### Score and Shoot
 
@@ -246,18 +246,18 @@ My aim for this game is that it will be accessible to multiple age groups with a
 
 #### Spock
 
-    - Spock 
+    - Spock
     - rock
     - scissors
     - lizard
-    - lizard 
+    - lizard
     - paper
     - Spock
-    - paper 
+    - paper
     - paper
     - rock
     - rock
-    - paper 
+    - paper
     - Spock
     - paper
 
@@ -272,7 +272,6 @@ My aim for this game is that it will be accessible to multiple age groups with a
 - **User 1** - I asked my grandmother, 67 years old to try the game, At first she found it hard to understand what to do. Even after explaining.
   - **User Comments** - She said "There isn't enough happening on screen to show me what I am supposed to do"
     - **Notes** - Maybe adding some color to the screen like for computer choices of the user choice to let the user know where they need to make their choice.
-  
 - **User 2** - I let my cousin Aisha, 8 years old to try play the game.
   - **User Comments** - She said "It's a fun game but very annoying when I press the shoot button the screen is blocked by an alert.".
     - **Notes** - Maybe some sort of stylish type of popup can display alerts of the end of the game or draw.
@@ -287,12 +286,12 @@ My aim for this game is that it will be accessible to multiple age groups with a
     ![css vidator](docs/images/css_val.JPG)
 - JavaScript
   - no errors were found [JS Hint](https://jshint.com/)
-  ![JS validator](docs/images/js_val.JPG)
+    ![JS validator](docs/images/js_val.JPG)
 
 ### Bugs I Faced Along The Way
 
 - I didn't face many bugs in the creation of this game, One issue I did have was changing the background color on the button selected by the user and the pc. I tried to use one function for each side but this prevented the game from running when I hit submit so instead, I used JavaScript for the computer choice using the changeButtonColor() and used CSS pseudo-class for the player choice.
-- Using the alerts to display the end game-winner made for a bad user experience, So I decided to use a popup instead. I was not sure how I could do this so I researched possible solutions online and found a tutorial online on how to create one I changed the style a bit and added my text and using spans I displayed the winner's catchphrase and a little text displaying *name* has won 7 games first!.
+- Using the alerts to display the end game-winner made for a bad user experience, So I decided to use a popup instead. I was not sure how I could do this so I researched possible solutions online and found a tutorial online on how to create one I changed the style a bit and added my text and using spans I displayed the winner's catchphrase and a little text displaying _name_ has won 7 games first!.
 - I faced a bug with code anywhere when I was making some minor changes to the readme, I ran a commit but nothing pushed through so I checked back and the file was unsaved. I saved the file and ran the commit again with the same message and this pushed it through and caused two commits to be pushed over to git with the same commit message. I noticed this save issue a few times throughout the creation of this project but was not a major problem.
 
 ### Bugs I did not get to fix
@@ -304,17 +303,17 @@ My aim for this game is that it will be accessible to multiple age groups with a
 
 This section describes how to create a new repository.
 
-- This repository was created using [GitHub](<https://github.com/>) The steps are as followed:
+- This repository was created using [GitHub](https://github.com/) The steps are as followed:
   - I went to the [Code Institute Template](https://github.com/Code-Institute-Org/ci-full-template)
   - I selected the green button labeled 'Use this template'
   - Then, Create a new repository.
-  - Then I was brought to a new page to set the name and setting  for my new repository.
+  - Then I was brought to a new page to set the name and setting for my new repository.
   - I named my repository 'R.P.S.L.S'
 
 This section describes how I set up my workspace, Once my repository has been created.
 
 - The workspace I used for this project was [codeanywhere](https://app.codeanywhere.com/). The steps are as follows:
-  - I opened [GitHub](<https://github.com/>) and went to the 'R.P.S.L.S' repository
+  - I opened [GitHub](https://github.com/) and went to the 'R.P.S.L.S' repository
   - To get the link for codeanywhere I clicked the green button '<>code'.
   - Here under local, I could copy the link needed: <https://github.com/JAmcevoy/R.P.S.L.S.git>
   - Then I went to code anywhere.
@@ -350,20 +349,22 @@ The live link can be found here - <https://jamcevoy.github.io/R.P.S.L.S/>
 
 ## Credits
 
+- I used these resources to research and develop my understanding of JavaScript, as well as getting inspiration for my own code. During this research, I have borrowed some ideas and modified the code to suit my project. No code was used unedited
+
 ### Design
 
-- All the design screenshots  from above came from [Wirframe](https://wireframe.cc/)
+- All the design screenshots from above came from [Wirframe](https://wireframe.cc/)
 - The flowchart created for the planning section was created with [Smart Draw](https://app.smartdraw.com/editor.aspx?templateId=da34e096-b9cb-4d56-a0ce-d9bdef138714&flags=128#depoId=52632460&credID=-57250829)
 
 ### Code
 
-- How to Select a random item from an array - [Geeks For Geeks](<https://www.geeksforgeeks.org/how-to-select-a-random-element-from-array-in-javascript/>)
-- How to print the value of the button to input box on click function- [Stack overflow](https://stackoverflow.com/questions/67653377/how-to-print-value-of-button-to-input-box-onclick-function)
-- Used for inspiration [Git Hub](https://github.com/TomZebra/Rock-Paper-Scissors-Spock-Lizzard/blob/main/app.js)
-- How to set an HTML value back to zero [Stack overflow](https://stackoverflow.com/questions/37580280/how-to-reset-a-counter-back-to-0-with-a-button-in-javascript)
-- End of the game pop up [Youtube](https://youtu.be/AF6vGYIyV8M?feature=shared)
-- The Scores Section was based on the Love Maths Project [Love Maths](https://github.com/JAmcevoy/LoveMaths)
-- For each statement for the background color of the comChoice [Free Code Camp](https://www.freecodecamp.org/news/javascript-foreach-how-to-loop-through-an-array-in-js/#:~:text=The%20forEach%20method%20passes%20a,The%20current%20element's%20index%20number)
+- Here I learned more about how to select a random item from an array to use for computr choice - [Geeks For Geeks](https://www.geeksforgeeks.org/how-to-select-a-random-element-from-array-in-javascript/)
+- Here I learned more about how to print the value of the button to input box on click function- [Stack overflow](https://stackoverflow.com/questions/67653377/how-to-print-value-of-button-to-input-box-onclick-function)
+- Used this project to better understand how this game would work and structure, I later changed the else if to a switch statement but then decided a map was a more reasonable option. [Git Hub](https://github.com/TomZebra/Rock-Paper-Scissors-Spock-Lizzard/blob/main/app.js)
+- Here I learned about how to set an HTML value back to zero [Stack overflow](https://stackoverflow.com/questions/37580280/how-to-reset-a-counter-back-to-0-with-a-button-in-javascript)
+- End of the game pop up, This is the closest I followed code as the function was simple but I used my own styling and structure. Then used the same type of function to display my draw heading. In my code the function called after 7 games instead of a open button. [Youtube](https://youtu.be/AF6vGYIyV8M?feature=shared)
+- The Scores Section was based on the Love Maths Project, I used the same two lines to add to score but then went further to add the fuction to reset the score back to zero after player or computer reaches 7 [Love Maths](https://github.com/JAmcevoy/LoveMaths)
+- For each statement for the background color of the comChoice this helped me better understand the statement and apply it my codes function [Free Code Camp](https://www.freecodecamp.org/news/javascript-foreach-how-to-loop-through-an-array-in-js/#:~:text=The%20forEach%20method%20passes%20a,The%20current%20element's%20index%20number)
 
 ### Content
 
