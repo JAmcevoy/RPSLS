@@ -50,9 +50,11 @@ function checkValues() {
  * Compares the Player and Computer Values.
  */
 function compare(playChoice, comChoice) {
+
     const winningMoves = winConditionsMap.get(playChoice);
 
     if (playChoice === comChoice) {
+
         drawScore();
     } else if (winningMoves && winningMoves.has(comChoice)) {
         winScore();
@@ -67,10 +69,12 @@ function compare(playChoice, comChoice) {
  * Adds catchphrase and winning messagge for player.
  */
 function winScore() {
+
     let oldScore = parseInt(document.getElementById("win").innerText);
     document.getElementById("win").innerText = ++oldScore;
 
     if (oldScore === 7) {
+
         document.getElementById("catchphrase").innerText = "Congratulations!";
         document.getElementById("winner").innerText =
             "You were the first to reach 7!";
@@ -87,10 +91,12 @@ function winScore() {
  * Adds catchphrase and loosing messagge for player.
  */
 function loseScore() {
+
     let oldScore = parseInt(document.getElementById("lose").innerText);
     document.getElementById("lose").innerText = ++oldScore;
 
     if (oldScore === 7) {
+
         document.getElementById("catchphrase").innerText = "BAZINGA!";
         document.getElementById("winner").innerText =
             "Sheldon has won 7 games first!";
@@ -104,6 +110,7 @@ function loseScore() {
 /**
  * Displays the draw heading it choices match*/
 function drawScore() {
+
     draw.classList.add("open-draw");
 }
 
@@ -111,6 +118,7 @@ function drawScore() {
  * Changes the computers button color based on which value the computer picks.
  */
 function changeButtonColor(comChoice) {
+
     ["rock", "paper", "scissors", "lizard", "spock"].forEach((choice) => {
         document.getElementById(`computer-${choice}`).style.backgroundColor = "";
     });
@@ -119,10 +127,10 @@ function changeButtonColor(comChoice) {
         "green";
 }
 
-/**
- * opens popup with result of the game.
+/** opens popup with result of the game.
  */
 function winPopup() {
+
     popup.classList.add("open-popup");
 }
 
@@ -130,5 +138,6 @@ function winPopup() {
  * closes the popup when button is clicked.
  */
 function closePopup() {
+    
     popup.classList.remove("open-popup");
 }

@@ -349,7 +349,7 @@ The live link can be found here - <https://jamcevoy.github.io/R.P.S.L.S/>
 
 ## Credits
 
-- I used these resources to research and develop my understanding of JavaScript, as well as getting inspiration for my own code. During this research, I have borrowed some ideas and modified the code to suit my project. No code was used unedited
+- I used these resources to research and develop my understanding of JavaScript, as well as get inspiration for my own code. During this research, I have borrowed some ideas and modified the code to suit my project. No code was used unedited
 
 ### Design
 
@@ -358,13 +358,13 @@ The live link can be found here - <https://jamcevoy.github.io/R.P.S.L.S/>
 
 ### Code
 
-- Here I learned more about how to select a random item from an array to use for computr choice - [Geeks For Geeks](https://www.geeksforgeeks.org/how-to-select-a-random-element-from-array-in-javascript/)
+- Here I learned more about how to select a random item from an array to use for computer choice - [Geeks For Geeks](https://www.geeksforgeeks.org/how-to-select-a-random-element-from-array-in-javascript/)
 - Here I learned more about how to print the value of the button to input box on click function- [Stack overflow](https://stackoverflow.com/questions/67653377/how-to-print-value-of-button-to-input-box-onclick-function)
-- Used this project to better understand how this game would work and structure, I later changed the else if to a switch statement but then decided a map was a more reasonable option. [Git Hub](https://github.com/TomZebra/Rock-Paper-Scissors-Spock-Lizzard/blob/main/app.js)
+- I used this project to better understand how this game would work and structure, I later changed the else if to a switch statement but then decided a map was a more reasonable option. [Git Hub](https://github.com/TomZebra/Rock-Paper-Scissors-Spock-Lizzard/blob/main/app.js)
 - Here I learned about how to set an HTML value back to zero [Stack overflow](https://stackoverflow.com/questions/37580280/how-to-reset-a-counter-back-to-0-with-a-button-in-javascript)
-- End of the game pop up, This is the closest I followed code as the function was simple but I used my own styling and structure. Then used the same type of function to display my draw heading. In my code the function called after 7 games instead of a open button. [Youtube](https://youtu.be/AF6vGYIyV8M?feature=shared)
-- The Scores Section was based on the Love Maths Project, I used the same two lines to add to score but then went further to add the fuction to reset the score back to zero after player or computer reaches 7 [Love Maths](https://github.com/JAmcevoy/LoveMaths)
-- For each statement for the background color of the comChoice this helped me better understand the statement and apply it my codes function [Free Code Camp](https://www.freecodecamp.org/news/javascript-foreach-how-to-loop-through-an-array-in-js/#:~:text=The%20forEach%20method%20passes%20a,The%20current%20element's%20index%20number)
+- End of the game pop-up, This is the closest I followed the code as the function was simple but I used my own styling and structure. Then used the same type of function to display my draw heading. In my code, the function is called after 7 games instead of an open button. [Youtube](https://youtu.be/AF6vGYIyV8M?feature=shared)
+- The Scores Section was based on the Love Maths Project, I used the same two lines to add to the score but then went further to add the function to reset the score back to zero after the player or computer reaches 7 [Love Maths](https://github.com/JAmcevoy/LoveMaths)
+- For each statement for the background color of the comChoice this helped me better understand the statement and apply it to my codes function [Free Code Camp](https://www.freecodecamp.org/news/javascript-foreach-how-to-loop-through-an-array-in-js/#:~:text=The%20forEach%20method%20passes%20a,The%20current%20element's%20index%20number)
 
 ### Content
 
