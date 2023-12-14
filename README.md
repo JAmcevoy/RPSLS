@@ -296,7 +296,7 @@ My aim for this game is that it will be accessible to multiple age groups with a
 
 ### Bugs I did not get to fix
 
-- I couldn't think of a way to display draws without using alerts. I thought maybe another pop-up but I feared this would make the code and display a bit messy and repetitive as I would need to use the same styles and functions as the end-game pop-up.
+- I couldn't think of a way to display when a user has not selected an option without using alerts. I thought maybe another pop-up but I feared this would make the code and display a bit messy and repetitive as I would need to use the same styles and functions as the end-game pop-up. Currently, if the user opens the page and press shoot it throws "No User Choice has been selected". before this, the score would just be given to the computer until the user made a choice or the score reached 7. I feel like to fix this I would need to restructure the game flow and code and I did not have enough time to pick it apart and try different things. I feel with more time and research I could find a solution and cross this bug off.
 - I wanted the user's choice to display alongside the computer's choice each round but because I used the focus class for the user's choice the color drops once the submit button is selected. I would need more time a research to look into possible solutions that wouldn't affect the running of the game.
 
 ## Deployment
