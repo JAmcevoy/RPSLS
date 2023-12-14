@@ -369,3 +369,4 @@ The live link can be found here - <https://jamcevoy.github.io/R.P.S.L.S/>
 ### Content
 
 - Because of the origin of this game names, rules, and catchphrases were all taken from the TV show The Big Bang Theory.
+- All Icons were taken from [Font Awesome](https://fontawesome.com/)
