@@ -1,6 +1,6 @@
 # Rock, Paper, Scissors, Lizard, Spock
 
-[R.P.S.L.S](https://jamcevoy.github.io/R.P.S.L.S/)
+[R.P.S.L.S](https://jamcevoy.github.io/RPSLS/)
 
 R.P.S.L.S is my spin on the sitcom's favorite game of Rock, Paper, Scissors, Lizard, Spock.
 
@@ -345,7 +345,7 @@ This section should describe the process I went through to deploy the project to
   - From the source section drop-down menu, select the Master Branch
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-The live link can be found here - <https://jamcevoy.github.io/R.P.S.L.S/>
+The live link can be found here - <https://jamcevoy.github.io/RPSLS/>
 
 ## Credits
 

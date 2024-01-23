@@ -11,12 +11,16 @@ const winConditionsMap = new Map([
 const popup = document.getElementById("popup");
 const draw = document.getElementById("draw");
 
+function clearOption() {
+    document.getElementById("hidden").value = "";
+}
+
 /**
  * Get the user's input by logging the value to a hidden field. Also, Clears the
  * field of any buttons already pressed.
  */
 function getPlayerChoice(value) {
-    document.getElementById("hidden").value = "";
+    clearOption();
     document.getElementById("hidden").value = value;
 }
 
@@ -44,6 +48,7 @@ function checkValues() {
         changeButtonColor(comChoice);
         compare(playChoice, comChoice);
     }
+    clearOption();
 }
 
 /**
