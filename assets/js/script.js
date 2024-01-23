@@ -11,13 +11,15 @@ const winConditionsMap = new Map([
 const popup = document.getElementById("popup");
 const draw = document.getElementById("draw");
 
+/**
+ * Clears users option hidden field when called.
+ */
 function clearOption() {
     document.getElementById("hidden").value = "";
 }
 
 /**
- * Get the user's input by logging the value to a hidden field. Also, Clears the
- * field of any buttons already pressed.
+ * Get the user's input by logging the value to a hidden field. Also,.
  */
 function getPlayerChoice(value) {
     clearOption();
