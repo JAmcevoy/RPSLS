@@ -300,6 +300,8 @@ My aim for this game is that it will be accessible to multiple age groups with a
 
     - The absence of color highlighting to indicate the user's previous selection exacerbated this problem, potentially leading to a negative user experience. To address this issue, I introduced a new function named clearOption(). This function ensures that each time the user clicks "Shoot" after its execution, the hidden field is cleared. This behavior mirrors the onclick function for user choices. To streamline the code, I removed this functionality from getPlayerChoice(value) and replaced it with a call to clearOption() as well as adding it to checkValues().
 
+- Another issue that was flag with my site was that it could be hard to navigate for some user. To fix thi issue I added in heading for each terminal. This will let the user know were exactly they need to play from.
+
 ### Bugs I did not get to fix
 
 - I couldn't think of a way to display when a user has not selected an option without using alerts. I thought maybe another pop-up but I feared this would make the code and display a bit messy and repetitive as I would need to use the same styles and functions as the end-game pop-up. Currently, if the user opens the page and press shoot it throws "No User Choice has been selected". before this, the score would just be given to the computer until the user made a choice or the score reached 7. I feel like to fix this I would need to restructure the game flow and code and I did not have enough time to pick it apart and try different things. I feel with more time and research I could find a solution and cross this bug off.
