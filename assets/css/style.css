@@ -30,16 +30,6 @@ body {
 
 /* Sections to hold button for player and computer */
 
-.termal-heading {
-    position: relative;
-    left: 100px;
-}
-
-#player-type {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
 
 #player-heading {
     color: cadetblue;
@@ -215,6 +205,11 @@ button {
         width: 300px;
         height: 300px;
         margin-right: 15px;
+    }
+
+    .termal-heading {
+        position: relative;
+        left: 100px;
     }
 
     #game-info {
